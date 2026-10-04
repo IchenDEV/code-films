@@ -1,72 +1,229 @@
+<div align="center">
+
 # 代码电影 · Code Films
 
-**用代码做纪录片：画面逐帧程序绘制，配乐由代码作曲，旁白由 AI 合成，一份脚本驱动一切。**
-*Documentary films made entirely in code — procedural picture, code-composed score, AI narration, all driven by one script file.*
+**用代码做纪录片。** 画面逐帧由程序绘制，配乐由代码作曲，旁白由 AI 合成，一份脚本驱动一切。
+
+[English](README.en.md) · **中文**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-d6b46f.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/IchenDEV/code-films?color=8fa3b8)](https://github.com/IchenDEV/code-films/releases)
+
+<img src="docs/images/hero.jpg" alt="《凡人》：托勒密的宇宙，人站在中心" width="100%">
+
+</div>
 
 ## 影片
 
-| 片名 | 时长 | 简介 |
-|---|---|---|
-| [**凡人 · Ordinary**](films/ordinary/) | 约 6 分钟，中 / 英 | 三重退位：位置、起源、心智。科学所做的，或许只有一件事：把我们，从神坛上请下来。 |
+### 凡人 · Ordinary　<sub>约 6 分钟 · 中文 / English · 1080p</sub>
 
-成片见 [Releases](../../releases)。
+> 科学所做的，或许只有一件事：把我们，从神坛上请下来。
 
-## 工作流
+三重退位：**位置**（地心说 → 暗淡蓝点）、**起源**（存在巨链 → 生命之树）、**心智**（我思故我在 → AI）。
+
+▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-en.mp4)　|　[关于这部片子](films/ordinary/)
+
+<img src="docs/images/stills.jpg" alt="《凡人》剧照：冷开场、篝火、天圆地方、创造亚当、托勒密体系、暗淡蓝点、存在巨链、阶梯变成树、同源骨骼、AlphaGo 与加速时间轴、能力分布曲线、本片的自我揭示" width="100%">
+
+---
+
+## 这套工作流能做什么
+
+| | |
+|---|---|
+| **一份脚本决定一切** | `script.mjs` 写双语旁白和镜头表。镜头时长由**实测的旁白长度**自动排出，改一句词、换一个声音都不用手动对时间。 |
+| **画面是纯函数** | 每个镜头是 `(ctx, 镜头内时间) → 画面` 的 Canvas 2D 函数：任意一帧都能单独渲染，可以多进程并行出片。 |
+| **一支合成乐团** | `orchestra.py` 用 numpy 合成弦乐、铜管、合唱、钢琴、竖琴、太鼓、定音鼓……片子按镜头名编曲，高潮与静默和画面对位。 |
+| **音效库** | `dsp.py`：雷、火、风、键盘、金属、落地、气流……全部程序合成，无需素材文件。 |
+| **AI 旁白** | ElevenLabs 逐句合成（带上下句语境、按内容缓存不重复计费），自动修剪静音、限制语速；可用语音转写核对发音。 |
+| **专业的混音** | 说话时音乐自动退让，旁白高于音乐 7 dB；可设“硬切”成纯静音；成品标准化到 -16 LUFS。 |
+| **档案图** | 从 Wikimedia Commons 下载公有领域图像，纪录片式缓推缓移，黑白版画可反相成“黑底发光线条”。 |
 
 ```
-films/<片名>/script.mjs ──► tts.py ──► vo_trim / vo_pace ──► build_timeline.mjs ──┬──► mix.py ──► loudnorm
-  (旁白 + 镜头表)          (ElevenLabs)  (修剪静音、控语速)     (按实测时长排镜头)      │   (sfx.py + score.py + 旁白)
-                                                                                 └──► render.mjs ──► mp4 ──► compress.sh
-                                                                                      (Chromium 渲染 shots/)
+script.mjs ─► tts.py ─► vo_trim / vo_pace ─► build_timeline.mjs ─┬─► mix.py (sfx.py + score.py + 旁白) ─► loudnorm
+ 旁白+镜头表   ElevenLabs   修剪静音、控语速      按实测时长排镜头       │
+                                                                 └─► render.mjs (Chromium 逐帧渲染 shots/) ─► mp4 ─► compress.sh
 ```
-
-- **一份脚本决定一切**：`script.mjs` 写双语旁白与镜头表；镜头时长由实测旁白长度排出，画面和声音读同一条时间轴。
-- **画面**：Canvas 2D 纯函数式逐帧绘制（任意帧可单独渲染、并行渲染），无头 Chromium 出帧，ffmpeg 编码；可叠加公有领域档案图（缓推缓移、版画反相）。
-- **声音**：`orchestra.py` 是一支合成乐团（弦乐、铜管、合唱、钢琴、竖琴、太鼓……），片子用它编曲；`dsp.py` 是音效库；混音自动给旁白让位，响度标准化到 -16 LUFS。
-- **旁白**：ElevenLabs CLI 逐句合成（带上下句语境、按内容缓存），自动修剪静音、限制语速；可用语音转写核对发音。
 
 ## 快速开始
 
-依赖：Node 20+、Python 3.10+、ffmpeg、Noto CJK 字体；合成旁白需要已登录的 [ElevenLabs CLI](https://www.npmjs.com/package/@elevenlabs/cli)。
+**依赖**：Node 20+ · Python 3.10+ · ffmpeg · Noto CJK 字体（Debian/Ubuntu：`apt install fonts-noto-cjk`）
+合成旁白另需已登录的 [ElevenLabs CLI](https://www.npmjs.com/package/@elevenlabs/cli)（`npm i -g @elevenlabs/cli`）。
 
 ```bash
+git clone https://github.com/IchenDEV/code-films && cd code-films
 npm install && npx playwright install chromium
 pip install -r requirements.txt
 
-./run.sh ordinary preview     # 浏览器实时预览《凡人》
-./run.sh ordinary stills zh @go+5 @recap   # 渲染任意镜头的任意时刻
-./run.sh ordinary all         # 旁白 → 时间轴 → 混音 → 渲染 → 压缩
-./run.sh new my-film          # 从模板新建一部片子
+./run.sh ordinary preview               # 浏览器里实时预览《凡人》，可拖动进度条
+./run.sh ordinary stills zh @go+5 @recap # 渲染任意镜头的任意时刻 → films/ordinary/out/stills/
+./run.sh ordinary audio zh && ./run.sh ordinary render zh   # 混音并渲染整片（没合成旁白时只有音乐与音效）
 ```
 
-仓库里带着《凡人》排好的时间轴和处理好的档案图，**不合成旁白也能直接预览和渲染画面**。
+仓库里带着《凡人》排好的时间轴与处理好的档案图，**不需要任何 API 也能预览和渲染画面**。完整重建：
+
+```bash
+./run.sh ordinary all     # 旁白 → 时间轴 → 混音 → 渲染 → 压缩
+```
+
+| 命令 | 作用 |
+|---|---|
+| `./run.sh <片名> tts [语言]` | 合成旁白；文本没变的句子会跳过 |
+| `./run.sh <片名> timeline` | 按实测旁白时长排镜头 |
+| `./run.sh <片名> audio [语言]` | 音效 + 配乐 + 旁白混音 |
+| `./run.sh <片名> score [语言]` | 只渲染配乐，单独试听 |
+| `./run.sh <片名> render [语言]` | 渲染画面并合成音轨 |
+| `./run.sh <片名> compress` | 压缩交付版：H.265（约 45 MB）+ H.264（约 110 MB） |
+| `./run.sh <片名> stills @镜头+秒 …` | 截帧检查 |
+| `./run.sh <片名> check [语言]` | 旁白逐句语速、音高是否离群 |
+| `./run.sh <片名> preview` | 实时预览 |
+| `./run.sh new <片名>` | 从模板新建一部片子 |
+
+## 做一部你自己的片子
+
+```bash
+./run.sh new my-film          # 复制 films/_template
+./run.sh my-film timeline     # 先用估算时长排一版
+./run.sh my-film preview      # 边写边看
+```
+
+一部片子就是一个目录：
+
+```
+films/my-film/
+├── film.json      配置：语言、输出文件名、旁白声音、语速上限、要预载的图片
+├── script.mjs     旁白与镜头表
+├── shots/*.js     镜头函数（在 index.html 里引入）
+├── score.py       配乐
+├── sfx.py         音效
+├── events.mjs     （可选）镜头内的事件：闪电时刻、剪辑点、屏幕打字……
+└── img/           （可选）档案图
+```
+
+### 1. `script.mjs`：旁白与镜头表
+
+```js
+export const LINES = {            // 每句一个 id；数组顺序同 film.json 的 languages
+  l1: ['每一部片子，都从一句话开始。', 'Every film begins with a single line.'],
+  l2: ['把它写进 script.mjs。', 'Write it in script.mjs.'],
+};
+export const CAPTIONS = { sky: ['星空 · 2026', 'The sky · 2026'] };   // 左上角的小字说明
+export const LABELS = { one: ['第一章', 'CHAPTER I'], title: ['新片', 'NEW FILM'] };
+
+export const SHOTS = [
+  { kind: 'stars', lines: ['l1', 'l2'], lead: 1.5, gap: 0.8, tail: 2, min: 8, caption: 'sky', label: 'one' },
+  { kind: 'title', lines: [], min: 5, label: 'title', xf: 1.2 },
+];
+```
+
+| 镜头字段 | 含义 |
+|---|---|
+| `kind` | 镜头函数名，对应 `SHOT[kind]` |
+| `lines` | 这个镜头里依次念出的旁白 id |
+| `lead` / `gap` / `tail` | 第一句前、句与句之间、最后一句后的留白（秒） |
+| `min` | 最短时长；没有旁白的镜头靠它决定长度 |
+| `xf` | 与上一个镜头的叠化时长；`0` 为硬切 |
+| `caption` | 档案图说明（`CAPTIONS` 里的 id） |
+| `label` | 章节标签，在镜头结尾出现；`title` 是片名，居中、更大 |
+| `silenceBefore` | 与上一镜头之间留出的黑场（秒） |
+| `hardOut` | 镜头结束时硬切（配合 `sfx.py` 的 `HARD` 做成纯静音） |
+
+### 2. 镜头函数：`shots/*.js`
+
+```js
+// u：镜头内时间（秒）；dur：镜头时长；sh[句子id]：这句旁白在镜头内开始的时刻
+SHOT.stars = (ctx, u, dur, sh) => {
+  drawStars(ctx, u, ease(u, 0, 2), H * 0.7 + u * 6);            // 星空，2 秒内淡入
+  const k = ease(u, sh.l2, sh.l2 + 1.5);                         // 第二句开始时……
+  glow(ctx, CX, CY, 160, [255, 220, 170], 0.5 * k);              // ……中央亮起一点光
+};
+```
+
+引擎提供的常用工具（`engine/web/`）：
+
+| | |
+|---|---|
+| 常量 | `W` `H`（1920×1080）、`CX` `CY`、`TAU` |
+| 时间曲线 | `ease(t, a, b)`、`win(t, a, b, 淡入, 淡出)`、`ramp`、`lerp`、`clamp`、`easeInOut` |
+| 随机与噪声 | `rand(i, j)`（确定性）、`noise1`、`noise2`、`fbm1`、`fbm2` |
+| 绘制 | `glow()` 光晕、`splinePath()` 平滑曲线、`polyProgress()` 折线逐步描出 |
+| 母题 | `drawStars` 星空、`drawFire` / `drawEmbers` 火与余烬、`drawProfile` 侧脸、`seatedPath` / `standingPath` 人物剪影、`fillHand` 手 |
+| 档案图 | `kenburns(ctx, 图名, 进度, [cx, cy, 可见高度比], [...])`：缓推缓移，返回图像坐标 → 屏幕坐标的映射 |
+| 字体 | `SERIF` `SANS` `MONO` `LATIN` `TYPEWRITER` |
+
+字幕、档案图说明、章节标签、胶片颗粒和暗角由引擎统一绘制，镜头只管画面本身。
+
+### 3. 配乐：`score.py`
+
+```python
+from orchestra import *   # 乐器与编曲工具
+
+def build_score(TL):                       # 返回与时间轴等长的立体声数组
+    S = {s['kind']: s for s in TL['shots']}
+    sc = Score(TL['DURATION'])
+    a, b = S['stars']['a'], S['stars']['b']
+    sc.chord(a, 'Dm', b - a, 'str', 0.5)                          # 弦乐和弦
+    sc.melody(a + 2, 1.0, [('A4', 2), ('D5', 2), ('C5', 4)], 'pno', 0.45)  # 钢琴旋律
+    sc.put('drm', S['title']['a'], taiko(0.9, big=True))         # 片名处一声太鼓
+    out = reverb(sc.mix(), 4.0, 0.35)[: int(TL['DURATION'] * SR)]
+    return out / np.max(np.abs(out)) * 0.9
+```
+
+乐器：`strings` `brass` `choir` `piano` `harp` `taiko` `timpani` `braam` `crash` `cymbal_swell` `pulse_note` `arp_note`；和弦名见 `CHORDS`（`Dm` `Bb` `F` `C` `Gm` `Asus` `D5`……），音名如 `'D4'`、`'Bb3'`。
+
+### 4. 音效：`sfx.py`
+
+`sfx.py` 由混音程序直接执行，`engine/pipeline/dsp.py` 的名字都可以直接用：
+
+```python
+a, b = span('stars')                                   # 镜头的起止时刻
+n = idx(b) - idx(a)
+add(fx, a, bp(pink(n), 200, 1200) * 0.06, -0.2)       # 一层风声，写进带混响的 fx 总线
+add(dry, at('stars', 'l2'), boom(46, 4, 1.2), 0, 0.4)  # 第二句旁白开始时一声低沉的 boom
+HARD = (end('stars') - 0.5, end('stars'))             # （可选）这一段清成纯静音
+```
+
+总线：`fx`（带空间混响）、`dry`（干声）；时刻：`span` `at` `end`；声音：`pink` `brown` `noise` `lp` `hp` `bp` `click` `boom` `metal` `whoosh` `fire_layer` `landing` `bell` `pluck` `pad`。
+
+### 5. `film.json`
+
+```json
+{
+  "id": "my-film",
+  "languages": ["zh", "en"],
+  "output": { "zh": "我的片子", "en": "MyFilm" },
+  "breath": { "zh": 0.15, "en": 0.08 },
+  "narration": {
+    "zh": { "voice": "<ElevenLabs voice id>", "model": "eleven_v4", "languageCode": "zh",
+            "settings": { "stability": 0.4, "similarity_boost": 0.8, "speed": 0.95 }, "paceCap": 4.4 },
+    "en": { "voice": "<ElevenLabs voice id>", "model": "eleven_v4",
+            "settings": { "stability": 0.5, "similarity_boost": 0.8, "speed": 0.9 }, "paceCapRelative": 1.12 }
+  },
+  "images": ["paleblue"]
+}
+```
+
+`breath` 是句与句之间额外的呼吸；`paceCap` 是语速上限（中文按字/秒），`paceCapRelative` 是相对中位语速的上限；`images` 列出 `img/*.jpg` 中要预载的图。
+
+## 性能与小贴士
+
+- **渲染**：4 核、无 GPU 的机器约 10 帧/秒，6 分钟的片子中英文各约 15 分钟。`render.mjs` 第二个参数是并行进程数。
+- **体积**：母版保留了胶片颗粒，约 1.7 GB；`compress` 出的 H.265 版约 45 MB，肉眼几乎无差别。
+- **改词**：只改 `script.mjs` → `tts`（只重新合成改动的句子）→ `timeline` → `audio` → `render`。
+- **挑声音**：一定要放进完整混音里试听，干声和成片里的感觉差别很大。更多经验见 [docs/WORKFLOW.md](docs/WORKFLOW.md)。
+- **飞书交付**（可选）：`engine/pipeline/deliver_lark.sh`，需要已登录的 `lark-cli`，通过环境变量 `LARK_USER_ID` / `LARK_FOLDER` 配置。
 
 ## 目录
 
 ```
-engine/web/          画面引擎：噪声与光晕、字幕、档案图推拉、调度与合成、可复用母题（火、星空、人物、手）
-engine/pipeline/     流水线：旁白、控速、时间轴、混音、乐团、音效库、渲染、截帧、压缩、档案图下载、飞书交付（可选）
-films/<片名>/        一部片子：film.json（配置）、script.mjs、shots/、score.py、sfx.py、img/、docs/
-films/_template/     新片模板（最小可运行的片子）
+engine/web/          画面引擎：core（光晕、噪声、颗粒）· text（字幕与标签）· archive（档案图）· assets（母题）· main（调度与预览）
+engine/pipeline/     流水线：tts · vo_trim · vo_pace · vo_check · build_timeline · mix · dsp · orchestra · render · stills · compress …
+films/ordinary/      《凡人》
+films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>
 ```
 
 ## 授权
 
-代码以 [MIT](LICENSE) 授权。各片的档案图、字体与声音来源见各自目录下的 `CREDITS.md`。
-
----
-
-## English
-
-**Code Films** is a small toolkit for documentary films made entirely in code. Each film lives in `films/<name>/`: a `script.mjs` (bilingual narration + shot list), shot functions drawn with Canvas 2D, a score arranged with the built-in synth orchestra, and a sound-design file. The shared engine synthesizes narration with ElevenLabs, lays out shot timings from the measured narration, mixes and loudness-normalizes the sound, renders every frame in headless Chromium, and encodes with ffmpeg.
-
-```bash
-npm install && npx playwright install chromium && pip install -r requirements.txt
-./run.sh ordinary preview     # live preview of "Ordinary"
-./run.sh ordinary all         # narration → timeline → audio → render → compress
-./run.sh new my-film          # start a new film from the template
-```
-
-First film: **[Ordinary (凡人)](films/ordinary/)** — three dethronements: of our place, our origin, and our mind. See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the full process. Code is MIT-licensed.
+代码以 [MIT](LICENSE) 授权。《凡人》中的档案图均为公有领域，字体与旁白声音的来源见 [films/ordinary/CREDITS.md](films/ordinary/CREDITS.md)。

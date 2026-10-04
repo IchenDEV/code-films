@@ -43,7 +43,8 @@ print('score...')
 sys.path.insert(0, os.getcwd())
 from score import build_score
 score = build_score(TL)[:N]
-music = np.zeros((N, 2)); music[:len(score)] = score
+music = dsp.music.copy()  # sfx.py 里用 pad()/bell() 写进 music 总线的声音也会保留
+music[:len(score)] += score
 
 print('reverb...')
 fxr = apply_rev(fx, reverb_ir(2.2, 2), 0.22)

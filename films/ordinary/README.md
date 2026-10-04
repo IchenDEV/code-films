@@ -5,6 +5,10 @@
 
 About 6 minutes, in Chinese and English. Narrated by Haoran (Chinese) and Michael Dan (English), both via ElevenLabs.
 
+▶ **Watch**: [Chinese](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-en.mp4)
+
+<img src="../../docs/images/stills.jpg" alt="Stills from Ordinary" width="100%">
+
 | Act | Content |
 |---|---|
 | Cold open | Someone types to a computer: "我们是什么？" No answer |
