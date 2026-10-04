@@ -1,0 +1,12 @@
+# 产物与缓存
+films/*/out/
+node_modules/
+__pycache__/
+*.pyc
+# 原始档案图（用 engine/pipeline/fetch_archive.py 重新下载；处理后的 img/ 已入库）
+films/*/archive/
+# 旧版本成片、个人的一次性脚本
+films/*/legacy-v1/*.mp4
+_attic/
+# 密钥
+.env

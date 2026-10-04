@@ -1,0 +1,15 @@
+{
+  "id": "ordinary",
+  "title": { "zh": "凡人", "en": "Ordinary" },
+  "languages": ["zh", "en"],
+  "output": { "zh": "凡人", "en": "Ordinary" },
+  "fps": 24,
+  "breath": { "zh": 0.15, "en": 0.08 },
+  "narration": {
+    "zh": { "voice": "pU9NaAwkoR3v0Mrg3uKz", "voiceName": "Haoran", "model": "eleven_v4", "languageCode": "zh",
+            "settings": { "stability": 0.4, "similarity_boost": 0.8, "speed": 0.95 }, "paceCap": 4.4 },
+    "en": { "voice": "QngvLQR8bsLR5bzoa6Vv", "voiceName": "Michael Dan", "model": "eleven_v4",
+            "settings": { "stability": 0.5, "similarity_boost": 0.8, "speed": 0.9 }, "paceCapRelative": 1.12 }
+  },
+  "images": ["ptolemy", "copernicus", "adam", "vitruvian", "nut", "purkinje", "fuxi", "paleblue", "chain", "darwin", "huxley", "descartes", "flammarion", "selfspec"]
+}

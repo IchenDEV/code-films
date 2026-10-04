@@ -1,0 +1,63 @@
+{
+ "lang": "en",
+ "FPS": 24,
+ "DURATION": 17.2,
+ "shots": [
+  {
+   "kind": "stars",
+   "a": 0,
+   "b": 12.9,
+   "fi": 0.01,
+   "fo": 1.2,
+   "lines": [
+    "l1",
+    "l2"
+   ],
+   "l1": 1.54,
+   "l1_end": 5.0009999999999994,
+   "l2": 5.881,
+   "l2_end": 11.120000000000001
+  },
+  {
+   "kind": "title",
+   "a": 11.7,
+   "b": 16.7,
+   "fi": 1.2,
+   "fo": 1,
+   "lines": []
+  }
+ ],
+ "subs": [
+  {
+   "a": 1.44,
+   "b": 5.351,
+   "text": "Every film begins with a single line."
+  },
+  {
+   "a": 5.781000000000001,
+   "b": 11.47,
+   "text": "Write it in script.mjs, and the picture and sound will follow."
+  }
+ ],
+ "captions": [],
+ "labels": [
+  {
+   "a": 12.600000000000001,
+   "b": 15.900000000000002,
+   "text": "NEW FILM",
+   "kind": "title"
+  }
+ ],
+ "vo": [
+  {
+   "id": "l1",
+   "t": 1.54,
+   "d": 3.461
+  },
+  {
+   "id": "l2",
+   "t": 5.881,
+   "d": 5.239
+  }
+ ]
+}

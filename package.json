@@ -1,0 +1,14 @@
+{
+  "name": "code-films",
+  "version": "1.0.0",
+  "description": "Documentary films made entirely in code: procedural picture, code-composed score, AI narration. First film: Ordinary (凡人).",
+  "scripts": {
+    "preview": "node engine/pipeline/serve.mjs 8000 ordinary"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  },
+  "private": true
+}

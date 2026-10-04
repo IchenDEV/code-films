@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>规律之内</title>
+<style>
+  html, body { margin: 0; background: #000; color: #bbb; font: 13px/1.4 system-ui, sans-serif; }
+  canvas { display: block; width: 100vw; max-width: 1920px; aspect-ratio: 16 / 9; margin: 0 auto; }
+  #ui { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 12px; align-items: center;
+        padding: 10px 16px; background: linear-gradient(transparent, rgba(0,0,0,.8)); }
+  #ui input { flex: 1; }
+  #ui button { background: #222; color: #ddd; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui" hidden>
+  <button id="play">播放 / 暂停</button>
+  <input id="t" type="range" min="0" step="0.01" value="0">
+  <span id="lab">0.00s</span>
+  <audio id="aud" src="../out/audio.wav" preload="auto"></audio>
+</div>
+<script src="timeline.js"></script>
+<script src="core.js"></script>
+<script src="assets.js"></script>
+<script src="scene1_fire.js"></script>
+<script src="scene2_altar.js"></script>
+<script src="scene3_cosmos.js"></script>
+<script src="scene4_life.js"></script>
+<script src="scene5_body.js"></script>
+<script src="scene6_machines.js"></script>
+<script src="scene7_screen.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

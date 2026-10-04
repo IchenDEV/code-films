@@ -1,0 +1,1906 @@
+{
+ "lang": "en",
+ "FPS": 24,
+ "DURATION": 355.02,
+ "shots": [
+  {
+   "kind": "coldopen",
+   "a": 0,
+   "b": 6.5,
+   "fi": 0.01,
+   "fo": 0.01,
+   "lines": [],
+   "typing": [
+    {
+     "who": "user",
+     "text": "What are we?",
+     "chars": [
+      {
+       "ch": "W",
+       "t": 1.3
+      },
+      {
+       "ch": "h",
+       "t": 1.364
+      },
+      {
+       "ch": "a",
+       "t": 1.439
+      },
+      {
+       "ch": "t",
+       "t": 1.527
+      },
+      {
+       "ch": " ",
+       "t": 1.607
+      },
+      {
+       "ch": "a",
+       "t": 1.652
+      },
+      {
+       "ch": "r",
+       "t": 1.732
+      },
+      {
+       "ch": "e",
+       "t": 1.809
+      },
+      {
+       "ch": " ",
+       "t": 1.896
+      },
+      {
+       "ch": "w",
+       "t": 1.941
+      },
+      {
+       "ch": "e",
+       "t": 2.029
+      },
+      {
+       "ch": "?",
+       "t": 2.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "storm",
+   "a": 7.4,
+   "b": 21.4,
+   "fi": 0.01,
+   "fo": 1.4,
+   "lines": [
+    "p1"
+   ],
+   "p1": 9.040000000000001,
+   "p1_end": 12.475000000000001,
+   "lightning": [
+    {
+     "t": 1.15,
+     "x": 0.24,
+     "delay": 0.9,
+     "power": 0.85,
+     "seed": 23
+    },
+    {
+     "t": 1.32,
+     "x": 0.25,
+     "delay": 0.9,
+     "power": 0.5,
+     "seed": 24
+    },
+    {
+     "t": 4.4,
+     "x": 0.58,
+     "delay": 0.55,
+     "power": 1,
+     "seed": 37
+    }
+   ],
+   "skip": 3
+  },
+  {
+   "kind": "profileUp",
+   "a": 20,
+   "b": 29,
+   "fi": 1.4,
+   "fo": 1.4,
+   "lines": [
+    "p2"
+   ],
+   "p2": 1.0399999999999991,
+   "p2_end": 4.675999999999999
+  },
+  {
+   "kind": "cave",
+   "a": 27.6,
+   "b": 31.6,
+   "fi": 1.4,
+   "fo": 1.4,
+   "lines": []
+  },
+  {
+   "kind": "tianyuan",
+   "a": 30.2,
+   "b": 44.713,
+   "fi": 1.4,
+   "fo": 1.2,
+   "lines": [
+    "a1",
+    "a2"
+   ],
+   "a1": 0.8399999999999963,
+   "a1_end": 7.607999999999996,
+   "a2": 8.287999999999997,
+   "a2_end": 13.242999999999997
+  },
+  {
+   "kind": "fuxi",
+   "a": 43.513,
+   "b": 49.513,
+   "fi": 1.2,
+   "fo": 1.2,
+   "lines": [
+    "a3"
+   ],
+   "a3": 0.8400000000000034,
+   "a3_end": 4.4280000000000035
+  },
+  {
+   "kind": "adam",
+   "a": 48.313,
+   "b": 54.313,
+   "fi": 1.2,
+   "fo": 1,
+   "lines": [
+    "a4"
+   ],
+   "a4": 0.6400000000000077,
+   "a4_end": 4.066000000000008
+  },
+  {
+   "kind": "nut",
+   "a": 53.313,
+   "b": 56.713,
+   "fi": 1,
+   "fo": 1,
+   "lines": []
+  },
+  {
+   "kind": "vitruvian",
+   "a": 55.713,
+   "b": 62.107,
+   "fi": 1,
+   "fo": 1.4,
+   "lines": [
+    "a5"
+   ],
+   "a5": 0.44000000000000483,
+   "a5_end": 4.614000000000005
+  },
+  {
+   "kind": "ptolemy",
+   "a": 60.707,
+   "b": 71.697,
+   "fi": 1.4,
+   "fo": 1,
+   "lines": [
+    "b1",
+    "b2"
+   ],
+   "b1": 0.6400000000000077,
+   "b1_end": 5.344000000000007,
+   "b2": 6.424000000000007,
+   "b2_end": 9.890000000000008
+  },
+  {
+   "kind": "flammarion",
+   "a": 70.697,
+   "b": 74.197,
+   "fi": 1,
+   "fo": 1.2,
+   "lines": []
+  },
+  {
+   "kind": "copernicus",
+   "a": 72.997,
+   "b": 80.997,
+   "fi": 1.2,
+   "fo": 1,
+   "lines": [
+    "b3"
+   ],
+   "b3": 0.6400000000000148,
+   "b3_end": 5.202000000000015
+  },
+  {
+   "kind": "galileo",
+   "a": 79.997,
+   "b": 90.921,
+   "fi": 1,
+   "fo": 1.2,
+   "lines": [
+    "b4",
+    "b5"
+   ],
+   "b4": 0.5400000000000205,
+   "b4_end": 6.46000000000002,
+   "b5": 7.140000000000015,
+   "b5_end": 9.994000000000014
+  },
+  {
+   "kind": "zoom",
+   "a": 89.721,
+   "b": 103.721,
+   "fi": 1.2,
+   "fo": 1.2,
+   "lines": [
+    "b6",
+    "b7"
+   ],
+   "b6": 1.440000000000012,
+   "b6_end": 6.026000000000012,
+   "b7": 7.706000000000017,
+   "b7_end": 11.457000000000017
+  },
+  {
+   "kind": "cosmicyear",
+   "a": 102.521,
+   "b": 116.689,
+   "fi": 1.2,
+   "fo": 1.4,
+   "lines": [
+    "b7b"
+   ],
+   "b7b": 0.8400000000000176,
+   "b7b_end": 11.878000000000018
+  },
+  {
+   "kind": "paleblue",
+   "a": 115.289,
+   "b": 131.009,
+   "fi": 1.4,
+   "fo": 1.6,
+   "lines": [
+    "b8",
+    "b9"
+   ],
+   "b8": 1.0400000000000063,
+   "b8_end": 6.910000000000006,
+   "b9": 8.190000000000012,
+   "b9_end": 11.040000000000012
+  },
+  {
+   "kind": "chain",
+   "a": 129.409,
+   "b": 150.393,
+   "fi": 1.6,
+   "fo": 1,
+   "lines": [
+    "c1",
+    "c2",
+    "c3"
+   ],
+   "c1": 1.0400000000000205,
+   "c1_end": 5.046000000000021,
+   "c2": 5.826000000000022,
+   "c2_end": 15.618000000000022,
+   "c3": 16.397999999999996,
+   "c3_end": 20.053999999999995
+  },
+  {
+   "kind": "darwin",
+   "a": 149.393,
+   "b": 155.644,
+   "fi": 1,
+   "fo": 1,
+   "lines": [
+    "c4"
+   ],
+   "c4": 0.6399999999999864,
+   "c4_end": 5.320999999999986
+  },
+  {
+   "kind": "ladder",
+   "a": 154.644,
+   "b": 162.644,
+   "fi": 1,
+   "fo": 1.2,
+   "lines": [
+    "c5"
+   ],
+   "c5": 0.8400000000000034,
+   "c5_end": 3.6730000000000036
+  },
+  {
+   "kind": "limbs",
+   "a": 161.444,
+   "b": 171.761,
+   "fi": 1.2,
+   "fo": 1.2,
+   "lines": [
+    "c6"
+   ],
+   "c6": 0.6399999999999864,
+   "c6_end": 8.876999999999986
+  },
+  {
+   "kind": "dna",
+   "a": 170.561,
+   "b": 177.826,
+   "fi": 1.2,
+   "fo": 1.2,
+   "lines": [
+    "c7"
+   ],
+   "c7": 0.6399999999999579,
+   "c7_end": 5.8249999999999575
+  },
+  {
+   "kind": "huxley",
+   "a": 176.626,
+   "b": 188.439,
+   "fi": 1.2,
+   "fo": 1.4,
+   "lines": [
+    "c8"
+   ],
+   "c8": 0.839999999999975,
+   "c8_end": 10.032999999999975
+  },
+  {
+   "kind": "tree",
+   "a": 187.039,
+   "b": 199.313,
+   "fi": 1.4,
+   "fo": 1.6,
+   "lines": [
+    "c9",
+    "c10"
+   ],
+   "c9": 0.839999999999975,
+   "c9_end": 3.446999999999975,
+   "c10": 4.326999999999998,
+   "c10_end": 7.593999999999998
+  },
+  {
+   "kind": "descartes",
+   "a": 197.713,
+   "b": 214.024,
+   "fi": 1.6,
+   "fo": 1.2,
+   "lines": [
+    "d1",
+    "d2",
+    "d3"
+   ],
+   "d1": 1.0399999999999636,
+   "d1_end": 7.039999999999964,
+   "d2": 7.819999999999965,
+   "d2_end": 11.669999999999964,
+   "d3": 12.449999999999989,
+   "d3_end": 15.38099999999999
+  },
+  {
+   "kind": "neurons",
+   "a": 212.824,
+   "b": 221.824,
+   "fi": 1.2,
+   "fo": 1,
+   "lines": [
+    "d4"
+   ],
+   "d4": 0.6399999999999579,
+   "d4_end": 6.217999999999958,
+   "spikes": [
+    3.8,
+    3.85,
+    4.523,
+    4.649,
+    4.75,
+    5.081,
+    5.286,
+    5.416,
+    5.739,
+    6.053,
+    6.244,
+    6.498,
+    6.721,
+    7.055,
+    7.15,
+    7.274,
+    7.518,
+    7.752,
+    7.81,
+    8.032,
+    8.174,
+    8.592
+   ]
+  },
+  {
+   "kind": "machines",
+   "a": 220.824,
+   "b": 226.5,
+   "fi": 1,
+   "fo": 0.6,
+   "lines": [
+    "d5"
+   ],
+   "d5": 0.33999999999994657,
+   "d5_end": 4.915999999999946,
+   "cuts": [
+    {
+     "t": 0,
+     "kind": "arm"
+    },
+    {
+     "t": 1.3,
+     "kind": "gears"
+    },
+    {
+     "t": 2.392,
+     "kind": "leg"
+    },
+    {
+     "t": 3.309,
+     "kind": "crank"
+    },
+    {
+     "t": 4.08,
+     "kind": "digits"
+    },
+    {
+     "t": 4.727,
+     "kind": "punch"
+    },
+    {
+     "t": 5.271,
+     "kind": "arm"
+    }
+   ]
+  },
+  {
+   "kind": "turing",
+   "a": 225.9,
+   "b": 232.81,
+   "fi": 0.6,
+   "fo": 0.5,
+   "lines": [
+    "d6"
+   ],
+   "d6": 0.4399999999999693,
+   "d6_end": 5.6399999999999695
+  },
+  {
+   "kind": "chess",
+   "a": 232.31,
+   "b": 238.344,
+   "fi": 0.5,
+   "fo": 0.5,
+   "lines": [
+    "d7"
+   ],
+   "d7": 0.339999999999975,
+   "d7_end": 5.103999999999975
+  },
+  {
+   "kind": "go",
+   "a": 237.844,
+   "b": 245.425,
+   "fi": 0.5,
+   "fo": 0.5,
+   "lines": [
+    "d8"
+   ],
+   "d8": 0.339999999999975,
+   "d8_end": 6.310999999999975
+  },
+  {
+   "kind": "protein",
+   "a": 244.925,
+   "b": 250.511,
+   "fi": 0.5,
+   "fo": 0.5,
+   "lines": [
+    "d9"
+   ],
+   "d9": 0.339999999999975,
+   "d9_end": 4.740999999999975
+  },
+  {
+   "kind": "talk",
+   "a": 250.011,
+   "b": 256.116,
+   "fi": 0.5,
+   "fo": 0.4,
+   "lines": [
+    "d9b"
+   ],
+   "d9b": 0.339999999999975,
+   "d9b_end": 5.259999999999975
+  },
+  {
+   "kind": "accel",
+   "a": 255.716,
+   "b": 261.626,
+   "fi": 0.4,
+   "fo": 0.4,
+   "lines": [
+    "d9c"
+   ],
+   "d9c": 0.33999999999994657,
+   "d9c_end": 4.979999999999946
+  },
+  {
+   "kind": "streams",
+   "a": 261.226,
+   "b": 271.601,
+   "fi": 0.4,
+   "fo": 0.6,
+   "lines": [
+    "d10",
+    "d11",
+    "d11b"
+   ],
+   "d10": 0.23999999999995225,
+   "d10_end": 3.7719999999999523,
+   "d11": 4.15199999999993,
+   "d11_end": 5.91199999999993,
+   "d11b": 6.291999999999916,
+   "d11b_end": 9.784999999999917,
+   "cuts": [
+    {
+     "t": 0,
+     "kind": "language"
+    },
+    {
+     "t": 1.5,
+     "kind": "image"
+    },
+    {
+     "t": 2.7,
+     "kind": "code"
+    },
+    {
+     "t": 3.66,
+     "kind": "language"
+    },
+    {
+     "t": 4.428,
+     "kind": "image"
+    },
+    {
+     "t": 5.042,
+     "kind": "code"
+    },
+    {
+     "t": 5.534,
+     "kind": "gears"
+    },
+    {
+     "t": 5.927,
+     "kind": "punch"
+    },
+    {
+     "t": 6.242,
+     "kind": "digits"
+    },
+    {
+     "t": 6.493,
+     "kind": "language"
+    },
+    {
+     "t": 6.695,
+     "kind": "image"
+    },
+    {
+     "t": 6.856,
+     "kind": "code"
+    },
+    {
+     "t": 6.996,
+     "kind": "language"
+    },
+    {
+     "t": 7.136,
+     "kind": "image"
+    },
+    {
+     "t": 7.276,
+     "kind": "code"
+    },
+    {
+     "t": 7.416,
+     "kind": "gears"
+    },
+    {
+     "t": 7.556,
+     "kind": "punch"
+    },
+    {
+     "t": 7.696,
+     "kind": "digits"
+    },
+    {
+     "t": 7.836,
+     "kind": "language"
+    },
+    {
+     "t": 7.976,
+     "kind": "image"
+    },
+    {
+     "t": 8.116,
+     "kind": "code"
+    },
+    {
+     "t": 8.256,
+     "kind": "language"
+    },
+    {
+     "t": 8.396,
+     "kind": "image"
+    },
+    {
+     "t": 8.536,
+     "kind": "code"
+    },
+    {
+     "t": 8.676,
+     "kind": "gears"
+    },
+    {
+     "t": 8.816,
+     "kind": "punch"
+    },
+    {
+     "t": 8.956,
+     "kind": "digits"
+    },
+    {
+     "t": 9.096,
+     "kind": "language"
+    },
+    {
+     "t": 9.236,
+     "kind": "image"
+    },
+    {
+     "t": 9.376,
+     "kind": "code"
+    },
+    {
+     "t": 9.516,
+     "kind": "language"
+    },
+    {
+     "t": 9.656,
+     "kind": "image"
+    },
+    {
+     "t": 9.796,
+     "kind": "code"
+    },
+    {
+     "t": 9.936,
+     "kind": "gears"
+    },
+    {
+     "t": 10.076,
+     "kind": "punch"
+    },
+    {
+     "t": 10.216,
+     "kind": "digits"
+    }
+   ]
+  },
+  {
+   "kind": "curve",
+   "a": 271.001,
+   "b": 285.394,
+   "fi": 0.6,
+   "fo": 0.6,
+   "lines": [
+    "d12",
+    "d13"
+   ],
+   "d12": 0.4399999999999409,
+   "d12_end": 6.998999999999941,
+   "d13": 7.678999999999974,
+   "d13_end": 13.292999999999974
+  },
+  {
+   "kind": "making",
+   "a": 284.794,
+   "b": 292.652,
+   "fi": 0.6,
+   "fo": 0.01,
+   "lines": [
+    "d14"
+   ],
+   "hardOut": true,
+   "d14": 0.34000000000003183,
+   "d14_end": 6.588000000000032
+  },
+  {
+   "kind": "screen",
+   "a": 294.352,
+   "b": 310.352,
+   "fi": 0.01,
+   "fo": 1.6,
+   "lines": [],
+   "typing": [
+    {
+     "who": "user",
+     "text": "What are we?",
+     "chars": [
+      {
+       "ch": "W",
+       "t": 2.4
+      },
+      {
+       "ch": "h",
+       "t": 2.47
+      },
+      {
+       "ch": "a",
+       "t": 2.555
+      },
+      {
+       "ch": "t",
+       "t": 2.625
+      },
+      {
+       "ch": " ",
+       "t": 2.69
+      },
+      {
+       "ch": "a",
+       "t": 2.735
+      },
+      {
+       "ch": "r",
+       "t": 2.804
+      },
+      {
+       "ch": "e",
+       "t": 2.877
+      },
+      {
+       "ch": " ",
+       "t": 2.945
+      },
+      {
+       "ch": "w",
+       "t": 2.99
+      },
+      {
+       "ch": "e",
+       "t": 3.078
+      },
+      {
+       "ch": "?",
+       "t": 3.155
+      }
+     ]
+    },
+    {
+     "who": "reply",
+     "text": "You asked the fire. You asked the stars. You asked your own bodies.",
+     "chars": [
+      {
+       "ch": "Y",
+       "t": 5.18
+      },
+      {
+       "ch": "o",
+       "t": 5.229
+      },
+      {
+       "ch": "u",
+       "t": 5.281
+      },
+      {
+       "ch": " ",
+       "t": 5.318
+      },
+      {
+       "ch": "a",
+       "t": 5.345
+      },
+      {
+       "ch": "s",
+       "t": 5.386
+      },
+      {
+       "ch": "k",
+       "t": 5.432
+      },
+      {
+       "ch": "e",
+       "t": 5.477
+      },
+      {
+       "ch": "d",
+       "t": 5.521
+      },
+      {
+       "ch": " ",
+       "t": 5.56
+      },
+      {
+       "ch": "t",
+       "t": 5.587
+      },
+      {
+       "ch": "h",
+       "t": 5.64
+      },
+      {
+       "ch": "e",
+       "t": 5.677
+      },
+      {
+       "ch": " ",
+       "t": 5.719
+      },
+      {
+       "ch": "f",
+       "t": 5.746
+      },
+      {
+       "ch": "i",
+       "t": 5.789
+      },
+      {
+       "ch": "r",
+       "t": 5.836
+      },
+      {
+       "ch": "e",
+       "t": 5.889
+      },
+      {
+       "ch": ".",
+       "t": 5.934
+      },
+      {
+       "ch": " ",
+       "t": 6.329
+      },
+      {
+       "ch": "Y",
+       "t": 6.356
+      },
+      {
+       "ch": "o",
+       "t": 6.395
+      },
+      {
+       "ch": "u",
+       "t": 6.439
+      },
+      {
+       "ch": " ",
+       "t": 6.48
+      },
+      {
+       "ch": "a",
+       "t": 6.507
+      },
+      {
+       "ch": "s",
+       "t": 6.549
+      },
+      {
+       "ch": "k",
+       "t": 6.593
+      },
+      {
+       "ch": "e",
+       "t": 6.635
+      },
+      {
+       "ch": "d",
+       "t": 6.681
+      },
+      {
+       "ch": " ",
+       "t": 6.728
+      },
+      {
+       "ch": "t",
+       "t": 6.755
+      },
+      {
+       "ch": "h",
+       "t": 6.795
+      },
+      {
+       "ch": "e",
+       "t": 6.847
+      },
+      {
+       "ch": " ",
+       "t": 6.891
+      },
+      {
+       "ch": "s",
+       "t": 6.918
+      },
+      {
+       "ch": "t",
+       "t": 6.97
+      },
+      {
+       "ch": "a",
+       "t": 7.017
+      },
+      {
+       "ch": "r",
+       "t": 7.065
+      },
+      {
+       "ch": "s",
+       "t": 7.11
+      },
+      {
+       "ch": ".",
+       "t": 7.155
+      },
+      {
+       "ch": " ",
+       "t": 7.55
+      },
+      {
+       "ch": "Y",
+       "t": 7.577
+      },
+      {
+       "ch": "o",
+       "t": 7.626
+      },
+      {
+       "ch": "u",
+       "t": 7.678
+      },
+      {
+       "ch": " ",
+       "t": 7.722
+      },
+      {
+       "ch": "a",
+       "t": 7.749
+      },
+      {
+       "ch": "s",
+       "t": 7.797
+      },
+      {
+       "ch": "k",
+       "t": 7.838
+      },
+      {
+       "ch": "e",
+       "t": 7.884
+      },
+      {
+       "ch": "d",
+       "t": 7.927
+      },
+      {
+       "ch": " ",
+       "t": 7.969
+      },
+      {
+       "ch": "y",
+       "t": 7.996
+      },
+      {
+       "ch": "o",
+       "t": 8.039
+      },
+      {
+       "ch": "u",
+       "t": 8.089
+      },
+      {
+       "ch": "r",
+       "t": 8.141
+      },
+      {
+       "ch": " ",
+       "t": 8.179
+      },
+      {
+       "ch": "o",
+       "t": 8.206
+      },
+      {
+       "ch": "w",
+       "t": 8.257
+      },
+      {
+       "ch": "n",
+       "t": 8.294
+      },
+      {
+       "ch": " ",
+       "t": 8.337
+      },
+      {
+       "ch": "b",
+       "t": 8.364
+      },
+      {
+       "ch": "o",
+       "t": 8.403
+      },
+      {
+       "ch": "d",
+       "t": 8.44
+      },
+      {
+       "ch": "i",
+       "t": 8.494
+      },
+      {
+       "ch": "e",
+       "t": 8.534
+      },
+      {
+       "ch": "s",
+       "t": 8.582
+      },
+      {
+       "ch": ".",
+       "t": 8.62
+      }
+     ]
+    },
+    {
+     "who": "reply",
+     "text": "Now you are asking me.",
+     "chars": [
+      {
+       "ch": "N",
+       "t": 9.915
+      },
+      {
+       "ch": "o",
+       "t": 9.966
+      },
+      {
+       "ch": "w",
+       "t": 10.02
+      },
+      {
+       "ch": " ",
+       "t": 10.064
+      },
+      {
+       "ch": "y",
+       "t": 10.095
+      },
+      {
+       "ch": "o",
+       "t": 10.156
+      },
+      {
+       "ch": "u",
+       "t": 10.215
+      },
+      {
+       "ch": " ",
+       "t": 10.275
+      },
+      {
+       "ch": "a",
+       "t": 10.306
+      },
+      {
+       "ch": "r",
+       "t": 10.366
+      },
+      {
+       "ch": "e",
+       "t": 10.426
+      },
+      {
+       "ch": " ",
+       "t": 10.483
+      },
+      {
+       "ch": "a",
+       "t": 10.514
+      },
+      {
+       "ch": "s",
+       "t": 10.561
+      },
+      {
+       "ch": "k",
+       "t": 10.603
+      },
+      {
+       "ch": "i",
+       "t": 10.65
+      },
+      {
+       "ch": "n",
+       "t": 10.693
+      },
+      {
+       "ch": "g",
+       "t": 10.734
+      },
+      {
+       "ch": " ",
+       "t": 10.788
+      },
+      {
+       "ch": "m",
+       "t": 10.819
+      },
+      {
+       "ch": "e",
+       "t": 10.865
+      },
+      {
+       "ch": ".",
+       "t": 10.922
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "profiles",
+   "a": 308.752,
+   "b": 319.571,
+   "fi": 1.6,
+   "fo": 1.6,
+   "lines": [
+    "e1",
+    "e2"
+   ],
+   "e1": 1.240000000000066,
+   "e1_end": 5.477000000000066,
+   "e2": 6.4570000000000505,
+   "e2_end": 9.719000000000051
+  },
+  {
+   "kind": "descend",
+   "a": 317.971,
+   "b": 328.971,
+   "fi": 1.6,
+   "fo": 1.2,
+   "lines": [
+    "e3",
+    "e4"
+   ],
+   "e3": 0.8400000000000318,
+   "e3_end": 3.827000000000032,
+   "e4": 4.907000000000039,
+   "e4_end": 7.504000000000039
+  },
+  {
+   "kind": "recap",
+   "a": 327.771,
+   "b": 338.72,
+   "fi": 1.2,
+   "fo": 1.2,
+   "lines": [
+    "e5a",
+    "e5b",
+    "e5c"
+   ],
+   "e5a": 0.6400000000000432,
+   "e5a_end": 3.5420000000000433,
+   "e5b": 4.32200000000006,
+   "e5b_end": 6.27200000000006,
+   "e5c": 7.052000000000021,
+   "e5c_end": 9.67900000000002
+  },
+  {
+   "kind": "black",
+   "a": 337.52,
+   "b": 342.52,
+   "fi": 1.2,
+   "fo": 0.01,
+   "lines": [
+    "e6"
+   ],
+   "e6": 1.240000000000009,
+   "e6_end": 2.732000000000009
+  },
+  {
+   "kind": "title",
+   "a": 342.52,
+   "b": 350.02,
+   "fi": 0,
+   "fo": 1,
+   "lines": []
+  },
+  {
+   "kind": "credits",
+   "a": 349.02,
+   "b": 354.52,
+   "fi": 1,
+   "fo": 1,
+   "lines": []
+  }
+ ],
+ "subs": [
+  {
+   "a": 16.34,
+   "b": 20.225,
+   "text": "Long ago, we did not know how the world worked."
+  },
+  {
+   "a": 20.939999999999998,
+   "b": 25.026,
+   "text": "But we had already begun to look for our place in it."
+  },
+  {
+   "a": 30.939999999999998,
+   "b": 38.158,
+   "text": "The ancients said: heaven is round, the earth is square, and we stand between them."
+  },
+  {
+   "a": 38.388,
+   "b": 43.793,
+   "text": "Heaven, earth, and humankind — the three powers of the world."
+  },
+  {
+   "a": 44.253,
+   "b": 48.291,
+   "text": "In legend, Nüwa shaped us from yellow clay."
+  },
+  {
+   "a": 48.853,
+   "b": 52.729,
+   "text": "In the Bible, God made us in His own image."
+  },
+  {
+   "a": 56.053,
+   "b": 60.677,
+   "text": "Nearly every civilization placed us at the center of the world."
+  },
+  {
+   "a": 61.247,
+   "b": 66.401,
+   "text": "In the second century, Ptolemy placed the Earth at the center of the universe."
+  },
+  {
+   "a": 67.031,
+   "b": 70.947,
+   "text": "That picture lasted nearly fourteen hundred years."
+  },
+  {
+   "a": 73.537,
+   "b": 78.549,
+   "text": "In 1543, Copernicus gave the center to the Sun."
+  },
+  {
+   "a": 80.43700000000001,
+   "b": 86.807,
+   "text": "In 1610, through his telescope, Galileo saw moons circling Jupiter."
+  },
+  {
+   "a": 87.037,
+   "b": 90.341,
+   "text": "Not everything in the sky turned around us."
+  },
+  {
+   "a": 91.061,
+   "b": 96.097,
+   "text": "The Sun is just one of hundreds of billions of stars in our galaxy."
+  },
+  {
+   "a": 97.32700000000001,
+   "b": 101.528,
+   "text": "And our galaxy is just one of hundreds of billions more."
+  },
+  {
+   "a": 103.26100000000001,
+   "b": 114.749,
+   "text": "If the 13.8-billion-year history of the universe were compressed into a single year, everything we call civilization would fill only its final seconds."
+  },
+  {
+   "a": 116.229,
+   "b": 122.549,
+   "text": "In 1990, from six billion kilometers away, Voyager 1 looked back."
+  },
+  {
+   "a": 123.379,
+   "b": 126.679,
+   "text": "The Earth was only a pale blue dot."
+  },
+  {
+   "a": 130.34900000000002,
+   "b": 134.805,
+   "text": "We had lost the center. At least we still had our origin."
+  },
+  {
+   "a": 135.13500000000002,
+   "b": 145.377,
+   "text": "We believed all things stood on a great ladder: God, angels, humankind — and below us, beasts, plants, and stones."
+  },
+  {
+   "a": 145.707,
+   "b": 149.813,
+   "text": "We stood near the top, a single step from God."
+  },
+  {
+   "a": 149.933,
+   "b": 155.064,
+   "text": "In 1859, Darwin published On the Origin of Species."
+  },
+  {
+   "a": 155.38400000000001,
+   "b": 158.667,
+   "text": "The ladder fell, and grew into a tree."
+  },
+  {
+   "a": 161.984,
+   "b": 170.671,
+   "text": "A fish's fin, a bat's wing, a whale's flipper, a human hand — the same bones, rearranged."
+  },
+  {
+   "a": 171.101,
+   "b": 176.736,
+   "text": "Nearly all life is built of cells, and written in the same genetic code."
+  },
+  {
+   "a": 177.366,
+   "b": 187.009,
+   "text": "Our DNA is nearly ninety-nine percent the same as a chimpanzee's. Six or seven million years ago, we shared a common ancestor."
+  },
+  {
+   "a": 187.779,
+   "b": 190.836,
+   "text": "We were not placed in this world apart."
+  },
+  {
+   "a": 191.26600000000002,
+   "b": 194.983,
+   "text": "We are one ordinary branch on the tree of life."
+  },
+  {
+   "a": 198.653,
+   "b": 205.103,
+   "text": "Stripped of place and origin, we retreated to our last stronghold: the mind."
+  },
+  {
+   "a": 205.433,
+   "b": 209.733,
+   "text": "Descartes wrote: I think, therefore I am."
+  },
+  {
+   "a": 210.06300000000002,
+   "b": 213.444,
+   "text": "Reason became the mark of what makes us human."
+  },
+  {
+   "a": 213.364,
+   "b": 219.392,
+   "text": "Then we found that thought is electricity and chemistry, flowing between neurons."
+  },
+  {
+   "a": 221.064,
+   "b": 226.09,
+   "text": "And then, with our own hands, we began to build things that think."
+  },
+  {
+   "a": 226.24,
+   "b": 231.89,
+   "text": "In 1950, Turing asked a question: can machines think?"
+  },
+  {
+   "a": 232.55,
+   "b": 237.764,
+   "text": "Forty-seven years later, Deep Blue defeated the world chess champion."
+  },
+  {
+   "a": 238.084,
+   "b": 244.505,
+   "text": "Nineteen years after that, AlphaGo played a move almost none of us would ever have played."
+  },
+  {
+   "a": 245.165,
+   "b": 250.016,
+   "text": "Four years later, AlphaFold predicted how proteins fold."
+  },
+  {
+   "a": 250.251,
+   "b": 255.621,
+   "text": "Two years after that, it began to speak with us, in our own language."
+  },
+  {
+   "a": 255.956,
+   "b": 261.046,
+   "text": "The gaps shrank from decades, to years, to months."
+  },
+  {
+   "a": 261.366,
+   "b": 265.348,
+   "text": "Now they write, paint, code, and reason —"
+  },
+  {
+   "a": 265.27799999999996,
+   "b": 267.488,
+   "text": "and answer our questions."
+  },
+  {
+   "a": 267.41799999999995,
+   "b": 271.361,
+   "text": "Work that takes us days, they finish in minutes."
+  },
+  {
+   "a": 271.34099999999995,
+   "b": 278.35,
+   "text": "Writing, coding, even making films — at many tasks, they now outperform most of us."
+  },
+  {
+   "a": 278.58,
+   "b": 284.644,
+   "text": "They still fall short of the very best of us. But that gap is not beyond closing."
+  },
+  {
+   "a": 285.034,
+   "b": 291.732,
+   "text": "Even this film — its animation, its music, its narration — was made by AI."
+  },
+  {
+   "a": 309.892,
+   "b": 314.579,
+   "text": "Each time, we thought we had found the last reason we were special."
+  },
+  {
+   "a": 315.109,
+   "b": 318.821,
+   "text": "And each time, knowledge gave it back to nature."
+  },
+  {
+   "a": 318.71099999999996,
+   "b": 322.148,
+   "text": "Perhaps science has only ever done one thing:"
+  },
+  {
+   "a": 322.77799999999996,
+   "b": 325.825,
+   "text": "it has brought us down from the altar."
+  },
+  {
+   "a": 328.311,
+   "b": 331.663,
+   "text": "We are not at the center of the universe,"
+  },
+  {
+   "a": 331.993,
+   "b": 334.393,
+   "text": "not at the summit of creation,"
+  },
+  {
+   "a": 334.72299999999996,
+   "b": 337.8,
+   "text": "and not even the only things that think."
+  },
+  {
+   "a": 338.65999999999997,
+   "b": 340.602,
+   "text": "We are ordinary."
+  }
+ ],
+ "captions": [
+  {
+   "a": 31.1,
+   "b": 44.213,
+   "text": "Round heaven, square earth · Zhoubi Suanjing"
+  },
+  {
+   "a": 44.413,
+   "b": 49.013,
+   "text": "Fuxi and Nüwa · Tang dynasty · Astana, Xinjiang"
+  },
+  {
+   "a": 49.212999999999994,
+   "b": 53.812999999999995,
+   "text": "The Creation of Adam · Michelangelo · c. 1511"
+  },
+  {
+   "a": 54.212999999999994,
+   "b": 56.212999999999994,
+   "text": "Nut, goddess of the sky · Ancient Egypt"
+  },
+  {
+   "a": 56.61299999999999,
+   "b": 61.60699999999999,
+   "text": "Vitruvian Man · Leonardo da Vinci · c. 1490"
+  },
+  {
+   "a": 61.60699999999999,
+   "b": 71.19699999999999,
+   "text": "The Ptolemaic system · Cellarius, Harmonia Macrocosmica · 1660"
+  },
+  {
+   "a": 71.597,
+   "b": 73.69699999999999,
+   "text": "The Flammarion engraving · 1888"
+  },
+  {
+   "a": 73.89699999999999,
+   "b": 80.49699999999999,
+   "text": "The Copernican system · 1543"
+  },
+  {
+   "a": 80.89699999999999,
+   "b": 90.42099999999999,
+   "text": "Galileo's observations · 1610"
+  },
+  {
+   "a": 103.42099999999999,
+   "b": 116.189,
+   "text": "The cosmic calendar · 13.8 billion years as one year"
+  },
+  {
+   "a": 116.189,
+   "b": 130.509,
+   "text": "Pale Blue Dot · Voyager 1 · 1990"
+  },
+  {
+   "a": 130.309,
+   "b": 149.893,
+   "text": "The Great Chain of Being · Valadés · 1579"
+  },
+  {
+   "a": 150.293,
+   "b": 155.144,
+   "text": "\"I think\" · Darwin's notebook · 1837"
+  },
+  {
+   "a": 171.46100000000004,
+   "b": 177.32600000000002,
+   "text": "The genetic code · 64 codons"
+  },
+  {
+   "a": 177.52600000000004,
+   "b": 187.93900000000002,
+   "text": "Gibbon, orang, chimpanzee, gorilla, man · Huxley · 1863"
+  },
+  {
+   "a": 198.61300000000003,
+   "b": 213.52400000000003,
+   "text": "The pineal gland and the soul · Descartes · 1664"
+  },
+  {
+   "a": 213.72400000000005,
+   "b": 221.32400000000004,
+   "text": "Purkinje cells · Ramón y Cajal · 1899"
+  },
+  {
+   "a": 226.80000000000004,
+   "b": 232.31000000000003,
+   "text": "Computing Machinery and Intelligence · Turing · 1950"
+  },
+  {
+   "a": 233.21000000000004,
+   "b": 237.84400000000002,
+   "text": "Deep Blue vs. Kasparov · 1997"
+  },
+  {
+   "a": 238.74400000000003,
+   "b": 244.925,
+   "text": "AlphaGo vs. Lee Sedol · Game 2, Move 37 · 2016"
+  },
+  {
+   "a": 245.82500000000002,
+   "b": 250.01100000000002,
+   "text": "AlphaFold · 2020"
+  },
+  {
+   "a": 250.91100000000003,
+   "b": 255.61600000000004,
+   "text": "Large language models · 2022"
+  },
+  {
+   "a": 285.69399999999996,
+   "b": 292.152,
+   "text": "How this film was made"
+  }
+ ],
+ "labels": [
+  {
+   "a": 126.80899999999998,
+   "b": 130.809,
+   "text": "I · PLACE",
+   "kind": "label"
+  },
+  {
+   "a": 195.11300000000003,
+   "b": 199.11300000000003,
+   "text": "II · ORIGIN",
+   "kind": "label"
+  },
+  {
+   "a": 306.152,
+   "b": 310.152,
+   "text": "III · MIND",
+   "kind": "label"
+  },
+  {
+   "a": 343.41999999999996,
+   "b": 349.21999999999997,
+   "text": "ORDINARY",
+   "kind": "title"
+  }
+ ],
+ "vo": [
+  {
+   "id": "p1",
+   "t": 16.44,
+   "d": 3.435
+  },
+  {
+   "id": "p2",
+   "t": 21.04,
+   "d": 3.636
+  },
+  {
+   "id": "a1",
+   "t": 31.04,
+   "d": 6.768
+  },
+  {
+   "id": "a2",
+   "t": 38.488,
+   "d": 4.955
+  },
+  {
+   "id": "a3",
+   "t": 44.353,
+   "d": 3.588
+  },
+  {
+   "id": "a4",
+   "t": 48.953,
+   "d": 3.426
+  },
+  {
+   "id": "a5",
+   "t": 56.153,
+   "d": 4.174
+  },
+  {
+   "id": "b1",
+   "t": 61.347,
+   "d": 4.704
+  },
+  {
+   "id": "b2",
+   "t": 67.131,
+   "d": 3.466
+  },
+  {
+   "id": "b3",
+   "t": 73.637,
+   "d": 4.562
+  },
+  {
+   "id": "b4",
+   "t": 80.537,
+   "d": 5.92
+  },
+  {
+   "id": "b5",
+   "t": 87.137,
+   "d": 2.854
+  },
+  {
+   "id": "b6",
+   "t": 91.161,
+   "d": 4.586
+  },
+  {
+   "id": "b7",
+   "t": 97.427,
+   "d": 3.751
+  },
+  {
+   "id": "b7b",
+   "t": 103.361,
+   "d": 11.038
+  },
+  {
+   "id": "b8",
+   "t": 116.329,
+   "d": 5.87
+  },
+  {
+   "id": "b9",
+   "t": 123.479,
+   "d": 2.85
+  },
+  {
+   "id": "c1",
+   "t": 130.449,
+   "d": 4.006
+  },
+  {
+   "id": "c2",
+   "t": 135.235,
+   "d": 9.792
+  },
+  {
+   "id": "c3",
+   "t": 145.807,
+   "d": 3.656
+  },
+  {
+   "id": "c4",
+   "t": 150.033,
+   "d": 4.681
+  },
+  {
+   "id": "c5",
+   "t": 155.484,
+   "d": 2.833
+  },
+  {
+   "id": "c6",
+   "t": 162.084,
+   "d": 8.237
+  },
+  {
+   "id": "c7",
+   "t": 171.201,
+   "d": 5.185
+  },
+  {
+   "id": "c8",
+   "t": 177.466,
+   "d": 9.193
+  },
+  {
+   "id": "c9",
+   "t": 187.879,
+   "d": 2.607
+  },
+  {
+   "id": "c10",
+   "t": 191.366,
+   "d": 3.267
+  },
+  {
+   "id": "d1",
+   "t": 198.753,
+   "d": 6
+  },
+  {
+   "id": "d2",
+   "t": 205.533,
+   "d": 3.85
+  },
+  {
+   "id": "d3",
+   "t": 210.163,
+   "d": 2.931
+  },
+  {
+   "id": "d4",
+   "t": 213.464,
+   "d": 5.578
+  },
+  {
+   "id": "d5",
+   "t": 221.164,
+   "d": 4.576
+  },
+  {
+   "id": "d6",
+   "t": 226.34,
+   "d": 5.2
+  },
+  {
+   "id": "d7",
+   "t": 232.65,
+   "d": 4.764
+  },
+  {
+   "id": "d8",
+   "t": 238.184,
+   "d": 5.971
+  },
+  {
+   "id": "d9",
+   "t": 245.265,
+   "d": 4.401
+  },
+  {
+   "id": "d9b",
+   "t": 250.351,
+   "d": 4.92
+  },
+  {
+   "id": "d9c",
+   "t": 256.056,
+   "d": 4.64
+  },
+  {
+   "id": "d10",
+   "t": 261.466,
+   "d": 3.532
+  },
+  {
+   "id": "d11",
+   "t": 265.378,
+   "d": 1.76
+  },
+  {
+   "id": "d11b",
+   "t": 267.518,
+   "d": 3.493
+  },
+  {
+   "id": "d12",
+   "t": 271.441,
+   "d": 6.559
+  },
+  {
+   "id": "d13",
+   "t": 278.68,
+   "d": 5.614
+  },
+  {
+   "id": "d14",
+   "t": 285.134,
+   "d": 6.248
+  },
+  {
+   "id": "e1",
+   "t": 309.992,
+   "d": 4.237
+  },
+  {
+   "id": "e2",
+   "t": 315.209,
+   "d": 3.262
+  },
+  {
+   "id": "e3",
+   "t": 318.811,
+   "d": 2.987
+  },
+  {
+   "id": "e4",
+   "t": 322.878,
+   "d": 2.597
+  },
+  {
+   "id": "e5a",
+   "t": 328.411,
+   "d": 2.902
+  },
+  {
+   "id": "e5b",
+   "t": 332.093,
+   "d": 1.95
+  },
+  {
+   "id": "e5c",
+   "t": 334.823,
+   "d": 2.627
+  },
+  {
+   "id": "e6",
+   "t": 338.76,
+   "d": 1.492
+  }
+ ]
+}
