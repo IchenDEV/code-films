@@ -25,6 +25,16 @@
 
 <img src="docs/images/stills.jpg" alt="《凡人》剧照：冷开场、篝火、天圆地方、创造亚当、托勒密体系、暗淡蓝点、存在巨链、阶梯变成树、同源骨骼、AlphaGo 与加速时间轴、能力分布曲线、本片的自我揭示" width="100%">
 
+### AI 越来越能干，人为什么越来越忙？　<sub>2 分 33 秒 · 中文 · 白板手绘 · 1080p</sub>
+
+> 让 AI 协调执行，让人掌握方向。
+
+从多源异步触发，到 Loop / Graph，再到随反馈变化的“大管家”。这是一支介绍工作组织方式的概念短片。
+
+▶ **观看**：[白板版](https://github.com/IchenDEV/code-films/releases/download/ai-steward-v1.0/ai-steward-zh.mp4)　|　[关于这部片子与制作入口](films/ai-steward/) · [公众号文案](films/ai-steward/公众号文案.md)
+
+**概念演示，非产品实录。**
+
 ---
 
 ## 这套工作流能做什么
@@ -219,6 +229,7 @@ HARD = (end('stars') - 0.5, end('stars'))             # （可选）这一段清
 engine/web/          画面引擎：core（光晕、噪声、颗粒）· text（字幕与标签）· archive（档案图）· assets（母题）· main（调度与预览）
 engine/pipeline/     流水线：tts · vo_trim · vo_pace · vo_check · build_timeline · mix · dsp · orchestra · render · stills · compress …
 films/ordinary/      《凡人》
+films/ai-steward/    《AI 越来越能干，人为什么越来越忙？》· HyperFrames 白板版
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>

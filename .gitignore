@@ -10,3 +10,9 @@ films/*/legacy-v1/*.mp4
 _attic/
 # 密钥
 .env
+# HyperFrames 影片的生成音轨与本地工作目录
+films/*/film/assets/mix.wav
+films/*/film/.hyperframes/
+films/*/film/.hyperframes-history/
+films/*/film/snapshots/
+films/*/film/renders/

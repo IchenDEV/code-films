@@ -25,6 +25,16 @@ Three dethronements — of our **place** (geocentrism → the pale blue dot), ou
 
 <img src="docs/images/stills.jpg" alt="Stills from Ordinary" width="100%">
 
+### AI Is Getting More Capable. Why Are We Getting Busier?　<sub>2m 33s · Chinese · Whiteboard · 1080p</sub>
+
+> Let AI coordinate execution, while people set the direction.
+
+A hand-drawn concept film about asynchronous work, Loop / Graph Engineering, and a steward that adapts the work graph as feedback arrives.
+
+▶ **Watch**: [Chinese whiteboard edition](https://github.com/IchenDEV/code-films/releases/download/ai-steward-v1.0/ai-steward-zh.mp4)　|　[About the film and build commands](films/ai-steward/) · [Chinese article](films/ai-steward/公众号文案.md)
+
+**Concept demonstration; not a recording of a real product.**
+
 ---
 
 ## What the pipeline does

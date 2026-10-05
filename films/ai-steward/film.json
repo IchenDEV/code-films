@@ -1,0 +1,19 @@
+{
+  "id": "ai-steward",
+  "title": "AI 越来越能干，人为什么越来越忙？",
+  "renderer": "hyperframes",
+  "languages": ["zh"],
+  "output": { "zh": "AI越来越能干_人为什么越来越忙_白板版" },
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "narration": {
+    "zh": {
+      "voice": "pU9NaAwkoR3v0Mrg3uKz",
+      "model": "eleven_v4",
+      "languageCode": "zh",
+      "settings": { "stability": 0.45, "similarity_boost": 0.8, "speed": 1.08 },
+      "paceCap": 5.8
+    }
+  }
+}

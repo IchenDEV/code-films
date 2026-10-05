@@ -24,6 +24,10 @@ if [[ $1 == new ]]; then
 fi
 FILM="$1"; STEP="$2"; shift 2
 cd "$ROOT/films/$FILM" || { echo "没有 films/$FILM"; exit 1; }
+# 有独立合成引擎的影片自行处理步骤，共用同一个仓库入口。
+if [[ -x ./run.sh ]]; then
+  exec ./run.sh "$STEP" "$@"
+fi
 LANGS=${*:-$(python3 -c "import json; print(' '.join(json.load(open('film.json'))['languages']))")}
 step() { echo -e "\n\033[1m▸ $FILM · $*\033[0m"; }
 case "$STEP" in
