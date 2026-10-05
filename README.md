@@ -35,6 +35,14 @@
 
 **概念演示，非产品实录。**
 
+### MCP 跑偏了　<sub>约 2 分 40 秒 · 中文 · 1080p</sub>
+
+> 两边都写着“支持 MCP”，说的却是两种方言。
+
+从“AI 应用的 Type-C”到授权、支持矩阵与执行沙箱，一支关于接口与运行框架边界的技术短片。两种旁白共用同一份画面源码，各自保存实测时间轴。
+
+▶ **观看**：[E · Ian](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-E-zh.mp4) · [F · Evan Zhao](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-F-zh.mp4)　|　[制作入口](films/mcp/) · [原文](films/mcp/article.md)
+
 ---
 
 ## 这套工作流能做什么
@@ -230,6 +238,7 @@ engine/web/          画面引擎：core（光晕、噪声、颗粒）· text（
 engine/pipeline/     流水线：tts · vo_trim · vo_pace · vo_check · build_timeline · mix · dsp · orchestra · render · stills · compress …
 films/ordinary/      《凡人》
 films/ai-steward/    《AI 越来越能干，人为什么越来越忙？》· HyperFrames 白板版
+films/mcp/           《MCP 跑偏了》· HyperFrames · E/F 两种旁白
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>

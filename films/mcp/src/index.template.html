@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>MCP 跑偏了</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Noto Sans CJK SC"; src: local("Noto Sans CJK SC"); font-weight: 400; }
+      @font-face { font-family: "Noto Sans CJK SC"; src: local("Noto Sans CJK SC Bold"); font-weight: 700; }
+      @font-face { font-family: "Noto Serif CJK SC"; src: local("Noto Serif CJK SC"); font-weight: 400; }
+      @font-face { font-family: "Noto Serif CJK SC"; src: local("Noto Serif CJK SC Bold"); font-weight: 700; }
+      @font-face { font-family: "DejaVu Sans Mono"; src: local("DejaVu Sans Mono"); font-weight: 400; }
+      @font-face { font-family: "Noto Sans Mono CJK SC"; src: local("Noto Sans Mono CJK SC"); font-weight: 400; }
+      :root {
+        --bg0: #0a0b0d;
+        --bg1: #17191d;
+        --ink: #ece7dd;
+        --soft: #bab5ab;
+        --mute: #837f77;
+        --line: rgba(236, 231, 221, 0.13);
+        --mint: #74d4b0;
+        --amber: #e6b04e;
+        --red: #e2654c;
+        --copper: #c98a5a;
+        --paper: #e7e0d0;
+        --pink: #29241e;
+        --sans: "Noto Sans CJK SC", sans-serif;
+        --serif: "Noto Serif CJK SC", serif;
+        --mono: "DejaVu Sans Mono", "Noto Sans Mono CJK SC", monospace;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--bg0); }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: var(--sans); color: var(--ink); }
+      .layer { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #bg { background: radial-gradient(1500px 950px at 50% 44%, #1a1c20 0%, #111215 55%, var(--bg0) 100%); }
+      #vignette { pointer-events: none; background: radial-gradient(1500px 1000px at 50% 50%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.6) 100%); }
+      #grain { pointer-events: none; opacity: 0.06; mix-blend-mode: screen;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>"); }
+      .cam { transform-origin: 960px 540px; }
+      .abs { position: absolute; left: 0; top: 0; }
+      svg.ov { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      svg.ov path, svg.ov line { fill: none; stroke-linecap: round; }
+
+      /* surfaces */
+      .card { position: absolute; border-radius: 14px; background: linear-gradient(180deg, #202226, #17191c);
+        border: 1px solid rgba(236, 231, 221, 0.12); box-shadow: 0 20px 44px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05); }
+      .paper { position: absolute; border-radius: 3px; color: var(--pink);
+        background-color: var(--paper);
+        background-image: linear-gradient(170deg, rgba(255,255,255,.35), rgba(255,255,255,0) 40%, rgba(80,60,30,.08)),
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0 0.15  0 0 0 0.16 0'/></filter><rect width='200' height='200' filter='url(%23p)'/></svg>");
+        box-shadow: 0 26px 56px rgba(0, 0, 0, 0.6), 0 3px 6px rgba(0, 0, 0, 0.45); }
+      .lbl { font-size: 13px; letter-spacing: .16em; color: var(--mute); white-space: nowrap; }
+      .mono { font-family: var(--mono); }
+      .serif { font-family: var(--serif); }
+      .nw { white-space: nowrap; }
+      .chip { position: absolute; padding: 8px 15px; border-radius: 9px; font-size: 18px; white-space: nowrap; color: var(--ink);
+        background: rgba(30, 32, 36, 0.97); border: 1px solid rgba(236, 231, 221, 0.22); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45); }
+      .chip.m { border-color: rgba(116, 212, 176, 0.6); }
+      .chip.a { border-color: rgba(230, 176, 78, 0.7); }
+      .chip.r { border-color: rgba(226, 101, 76, 0.7); }
+      .chip .k { font-size: 13px; margin-right: 8px; color: var(--mute); letter-spacing: .08em; }
+      .chip.m .k { color: var(--mint); } .chip.a .k { color: var(--amber); } .chip.r .k { color: var(--red); }
+      .tag { display: inline-block; font-size: 13px; padding: 2px 9px; border-radius: 5px; white-space: nowrap; letter-spacing: .04em; }
+      .tag.m { color: var(--mint); background: rgba(116, 212, 176, 0.1); border: 1px solid rgba(116, 212, 176, 0.4); }
+      .tag.a { color: var(--amber); background: rgba(230, 176, 78, 0.1); border: 1px solid rgba(230, 176, 78, 0.45); }
+      .tag.r { color: var(--red); background: rgba(226, 101, 76, 0.1); border: 1px solid rgba(226, 101, 76, 0.45); }
+      .tag.g { color: var(--soft); background: rgba(236, 231, 221, 0.06); border: 1px solid rgba(236, 231, 221, 0.2); }
+      .led { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 10px rgba(116, 212, 176, 0.8); }
+      .stamp { position: absolute; padding: 6px 18px 8px; border: 4px solid var(--red); border-radius: 8px; color: var(--red);
+        font-family: var(--serif); font-weight: 700; font-size: 44px; letter-spacing: .12em; white-space: nowrap; mix-blend-mode: multiply; }
+
+      /* metal (plug) */
+      .metal { background: linear-gradient(180deg, #e9e6e0 0%, #b9b5ae 22%, #8a8680 48%, #a9a59e 60%, #6f6b66 100%); }
+      .rubber { background: linear-gradient(180deg, #2b2c2f 0%, #1a1b1d 45%, #0f1011 100%); }
+
+      /* captions */
+      .key { position: absolute; left: 96px; top: 70px; white-space: nowrap; }
+      .key .n { font-size: 14px; color: var(--copper); letter-spacing: .3em; }
+      .key .r { display: inline-block; width: 46px; height: 1px; background: var(--copper); opacity: .8; vertical-align: middle; margin: 0 14px 4px 12px; transform-origin: 0 50%; }
+      .key .tx { display: block; margin-top: 10px; font-family: var(--serif); font-size: 32px; color: #f2eee6; letter-spacing: .06em; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9); }
+      #keyScrim { background: radial-gradient(900px 260px at 0% 0%, rgba(6, 6, 8, 0.8), rgba(6, 6, 8, 0) 70%); }
+      #subScrim { background: linear-gradient(180deg, rgba(6, 6, 8, 0) 80%, rgba(6, 6, 8, 0.8) 100%); }
+      .sub { position: absolute; left: 160px; right: 160px; bottom: 50px; text-align: center; font-size: 38px; line-height: 1.45; color: #f3efe8; letter-spacing: .04em;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85), 0 0 24px rgba(0, 0, 0, 0.9); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-width="1920" data-height="1080">
+      <div id="stage" class="layer">
+        <div id="bg" class="layer"></div>
+        <div id="scenes" class="layer"></div>
+        <div id="keyScrim" class="layer"></div>
+        <div id="key" class="layer"></div>
+        <div id="subScrim" class="layer"></div>
+        <div id="subs" class="layer"></div>
+        <div id="vignette" class="layer"></div>
+        <div id="grain" class="layer"></div>
+      </div>
+      <audio id="mix" src="assets/mix.wav" data-start="0" data-duration="__DUR__" data-track-index="1" data-volume="1"></audio>
+    </div>
+    <script>
+__TIMELINE__
+__FILM__
+    </script>
+  </body>
+</html>

@@ -24,6 +24,14 @@ The first film, 《凡人 / Ordinary》, went through four rounds of iteration (
 - **Trimming silence.** Don't use ffmpeg `silenceremove`; it can cut quiet openings like "女娲" or "银河". `vo_trim.py` cuts by the energy envelope and keeps some margin.
 - **Pace control.** `vo_pace.py` slows lines that are faster than documentary pace, using pitch-preserving atempo, and never speeds anything up. Set the cap too low, though (Chinese 4.1 characters/s), and the second half drags. 4.4 ended up as the right value.
 
+### Multiple voices in a HyperFrames film
+
+`films/mcp/` keeps one script and one animation source for two narration voices. Each voice has its own `timing/<variant>/`, `film/<variant>/` and `out/<variant>/`. The repository entry point selects the version explicitly, for example `./run.sh mcp audio E`; omitted versions use the default in `film.json`.
+
+The saved durations and character alignments let either picture rebuild offline. Alignment caches use audio and text hashes; synthesis caches also include the neighboring narration. Audio processing settings can change without repeating the synthesis API call. Before rendering, a content hash checks that the mix belongs to the current narration and timeline.
+
+For this conversational technical essay, slow long lines are brought toward 4.9 Chinese units/s with pitch-preserving time stretching, capped at 1.18×. This is a film-specific setting in `film.json`, alongside the faster synthesis speed and shorter scripted gaps. Judge pace and voice in the complete mix.
+
 ## 3. Sound
 
 - **The score is composed in code**: the film's `score.py` arranges it using the instruments in `engine/pipeline/orchestra.py`.

@@ -1,0 +1,23 @@
+{
+  "id": "mcp",
+  "title": "MCP 跑偏了",
+  "renderer": "hyperframes",
+  "languages": ["zh"],
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "hyperframesVersion": "0.8.124",
+  "defaultVariant": "F",
+  "variants": {
+    "E": { "name": "Ian", "voice": "tSv4yoTPFFmCMaJpNf0A", "output": "MCP跑偏了_E_1080p" },
+    "F": { "name": "Evan Zhao", "voice": "MI36FIkp9wRP7cpWKPTl", "output": "MCP跑偏了_F_1080p" }
+  },
+  "narration": {
+    "model": "eleven_v4",
+    "languageCode": "zh",
+    "settings": { "stability": 0.4, "similarity_boost": 0.8, "speed": 1.1 },
+    "paceCap": 6.2,
+    "paceTarget": 4.9,
+    "maxSpeedup": 1.18
+  }
+}

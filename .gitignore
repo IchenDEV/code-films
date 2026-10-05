@@ -16,3 +16,10 @@ films/*/film/.hyperframes/
 films/*/film/.hyperframes-history/
 films/*/film/snapshots/
 films/*/film/renders/
+# 多配音版本的 HyperFrames 音轨与本地工作目录
+films/*/film/*/assets/mix.wav
+films/*/film/*/assets/mix.tmp.wav
+films/*/film/*/.hyperframes/
+films/*/film/*/.hyperframes-history/
+films/*/film/*/snapshots/
+films/*/film/*/renders/

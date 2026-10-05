@@ -35,6 +35,14 @@ A hand-drawn concept film about asynchronous work, Loop / Graph Engineering, and
 
 **Concept demonstration; not a recording of a real product.**
 
+### MCP Has Drifted Off Course · MCP 跑偏了　<sub>~2m 40s · Chinese · 1080p</sub>
+
+> Both sides say “supports MCP,” yet they speak different dialects.
+
+A technical essay about authorization, client compatibility, execution sandboxes, and the boundary between capability interfaces and agent runtimes. Two narration voices share one picture source, with separate measured timelines.
+
+▶ **Watch**: [E · Ian](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-E-zh.mp4) · [F · Evan Zhao](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-F-zh.mp4)　|　[Build commands](films/mcp/) · [Chinese article](films/mcp/article.md)
+
 ---
 
 ## What the pipeline does

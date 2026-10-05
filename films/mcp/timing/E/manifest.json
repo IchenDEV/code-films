@@ -1,0 +1,254 @@
+{
+ "p1": {
+  "hash": "6fbc3ae3cbd8",
+  "duration": 2.865,
+  "text": "最近，Pi 把 MCP 做成了内置功能。",
+  "rate": 4.89,
+  "_contextHash": "5511eb417f23e3b773ee1a39f9220e8ea11ad9423dbcd7903217c898285fe6eb",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "1862b3af8a3e3b75c46c64071595f863b7cf99826dded6c1d167123cdf5d3adb"
+ },
+ "p2": {
+  "hash": "2d37baa0cde0",
+  "duration": 3.877,
+  "text": "有意思的是，它的作者 Mario，曾经明确反对 MCP。",
+  "rate": 4.9,
+  "_contextHash": "bf634217f3b0ec07d073e0835684308058c4cdf3cb578f57270381ea805a547a",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "2a4d5e0d0db818923b00b8c299a0dd66aa0912ae7fc7b2a190b05398619a5a1c"
+ },
+ "p3": {
+  "hash": "69cfe4fed429",
+  "duration": 5.498,
+  "text": "他嫌的是：几十份工具说明一股脑塞进上下文，又贵，又难组合。",
+  "rate": 4.55,
+  "_contextHash": "202e6bd608c481909a7b40250e567e2bdf6865f3b5207950187d19dafbcc3a81",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "6caf762f702398b6fa0c3f6f3aa71fb2b0e884f68fe4e78e471cc695110945c9"
+ },
+ "p4": {
+  "hash": "2e23b5662d12",
+  "duration": 5.931,
+  "text": "Pi 现在让模型在沙箱里写一段程序，把工具串起来，只把结论带回来。",
+  "rate": 4.89,
+  "_contextHash": "7d8d9f54db9eae50e2d44c56f91c114a9d61e586bf849c703c38a81edd39d4bc",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "cfc3f922ddcdba12c4e614e1436e2ec92ab6f0713a6cb798cc344c6da7a24761"
+ },
+ "p5": {
+  "hash": "a0b9efee71bf",
+  "duration": 3.905,
+  "text": "很聪明。但我觉得，MCP 真正的问题不在这里。",
+  "rate": 4.61,
+  "_contextHash": "2ff6bf08929fafa793037429b53bfab018b89db49aba6c54e3a072f86f032a03",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "103e82ec16ebc96b475d33bbe9a615b82864b38824027aca5cdeec458978d943"
+ },
+ "c1": {
+  "hash": "be594f469f4a",
+  "duration": 5.929,
+  "text": "MCP 刚出来时，我们都把它当成 AI 应用的 Type-C：插一次，到处能用。",
+  "rate": 4.89,
+  "_contextHash": "8b71d8c2505f8164975ce78db27fdb319b7ddf8d75f3c8e36cd14677eb9f6589",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "b4386af49ebd9deb45c00f588a0c1e4453e453395c7a7898ab95b48d849c77e5"
+ },
+ "c2": {
+  "hash": "f4b1fdc17104",
+  "duration": 4.697,
+  "text": "去年我写了很久的 MCP Server，才发现插上以后，问题才刚开始。",
+  "rate": 4.9,
+  "_contextHash": "7ece631ac27517fa2902841afd9e79f95545e458145da83941cebb11fd922ba1",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "c55af9ce3e31e5a738ca0eb8d37e0bcce82a4ac9c5ee5d32a22d45a8fb5c864b"
+ },
+ "c3": {
+  "hash": "3b24dea8a2e2",
+  "duration": 5.116,
+  "text": "下一页谁来取？长任务怎么跟进？用户确认，会不会真的弹出来？",
+  "rate": 4.89,
+  "_contextHash": "384cc862f7c1187dc23a93f54665f24a0d66ecb61ee1f30c2fc24be6fab4e4a7",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "9b2e3ac4649bfcb7a66d7cf47445c7184adc7cac42f0013d8a63b75557793184"
+ },
+ "c4": {
+  "hash": "d66f43b06bd9",
+  "duration": 5.305,
+  "text": "同一份结构化结果，这边当数据校验，那边只当一段话交给模型。",
+  "rate": 4.9,
+  "_contextHash": "edd1cd2b296af62ea6e3f38ab9cc6f698113623e4563dda8f37577db86475da5",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "80e210c1f2a3b73e330b801b76aa8b5ce1acd29d80ee77f8456c9ec2fe6b8bfc"
+ },
+ "c5": {
+  "hash": "1b713f681e28",
+  "duration": 4.073,
+  "text": "两边都写着“支持 MCP”，说的却是两种方言。",
+  "rate": 4.17,
+  "_contextHash": "7e679ac519f635332624d8fb320486a72647bb3997f33079d0b6b0d2d72a43d3",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "852646f147d670aa5f350a538707e1dd3edc62d1d9a4d6cdb37a1180c3adc869"
+ },
+ "g1": {
+  "hash": "64ad76775394",
+  "duration": 7.056,
+  "text": "最卡人的是授权。同一份凭据，这里通过，那里被拒，换个地方又反复重试。",
+  "rate": 4.11,
+  "_contextHash": "2347b1165de18148f46fbcb8d559f4ce0e5c0be976737a2288468665ec37d8ea",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "ff964d0918424dcae4f5fe30821cd30d9ff3848ab91b50dadf18a93ea76bf0d3"
+ },
+ "g2": {
+  "hash": "608cc4129da6",
+  "duration": 4.659,
+  "text": "服务端不知道对面接不接得住，只好按最弱的客户端来设计。",
+  "rate": 5.37,
+  "_contextHash": "fa0ebfd5468f353696fb5fd26cac33f4406829a996f81f38ef004123027ca11a",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "788297c6179cf0337812dffd5b3a82e7479980d8344766131bedfa25cd40b19f"
+ },
+ "g3": {
+  "hash": "bfc8a937c72e",
+  "duration": 4.5,
+  "text": "Agent 也不敢信服务端，只好自己兜底超时、重试和降级。",
+  "rate": 4.89,
+  "_contextHash": "22cdc9814cb36264e550e5a534589cad95552860fa5627861a5bcd42e84562b3",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "7f196947cf09182b7e1288883c54aa95ac070c35afdccc1cff98ca0bee148655"
+ },
+ "g4": {
+  "hash": "de1a517c2a80",
+  "duration": 4.756,
+  "text": "接一次就能通，最后成了：接一次，测一次，记一笔特例。",
+  "rate": 4.42,
+  "_contextHash": "c490edad2bdf328ba7c68cda8d0e3af1610f939add23cf41032bb7d26c1bd3b4",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "145ba621ac739a9fbcdeaaa293871885be3719e39b92c547de2fde22a8f206c3"
+ },
+ "x1": {
+  "hash": "52c333838918",
+  "duration": 4.297,
+  "text": "后来，MCP 上面长出了 Apps，又长出各家自己的扩展。",
+  "rate": 4.89,
+  "_contextHash": "0b74abfa68db0ccabcab7da8b3fdbb1d2c9bf74327d4df08bbeeaa2f80f6371a",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "9f0f5c6b4709119c59d70ad05e5329caf84cb9abde56175cb64c586158993da5"
+ },
+ "x2": {
+  "hash": "c44178d9bdec",
+  "duration": 4.988,
+  "text": "每一层都合理。可“已连接”三个字，能说明的东西越来越少。",
+  "rate": 4.61,
+  "_contextHash": "e981d6c8261c51d9cd4cdd58dcb9fee7af5e3b8a073e2ed8bf62d1ad9a745cfc",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "87b880599f646f25bbfedc116dd8b8bb320663d2c0e01972906e5a567862d8e7"
+ },
+ "s1": {
+  "hash": "2af61b73034a",
+  "duration": 2.66,
+  "text": "也有人说，干脆都交给命令行吧。",
+  "rate": 4.89,
+  "_contextHash": "8a48a8270eeae3eabcc73b6134beed6770bdbd8658f3bf68f84206fb622f28c7",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "f7648d728c5e40583debbd930741e7d9e23438dddbc7d0aa7a350f571b842309"
+ },
+ "s2": {
+  "hash": "3da470852211",
+  "duration": 6.521,
+  "text": "可一个只想查订单的智能体，没必要先领一台 Linux 机器，再把所有凭据塞进去。",
+  "rate": 4.91,
+  "_contextHash": "9b4856c08790d21ee50bf2b2dfaa51d4049bc5ae6c8b344d3605fa1ab02006e7",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "6d5e321fee515455729aa8410da931f19887ef00287c298b8fbb026524a07553"
+ },
+ "s3": {
+  "hash": "2980ca94b99e",
+  "duration": 4.41,
+  "text": "沙箱更像执行节点：用时创建，用完回收。",
+  "rate": 3.63,
+  "_contextHash": "33f5e9b76f18994909eed72c4fef338da774a10eb3dd54278227df3d4199004e",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "6c219dbd35b56efe95320406d9d52d8ab9692a126864ce78ed4ee04bca9ee423"
+ },
+ "s4": {
+  "hash": "76e10b32840a",
+  "duration": 3.957,
+  "text": "任务、权限和凭据，留在长期在线的控制层里。",
+  "rate": 4.55,
+  "_contextHash": "2e6df0c3c22493ca827c337fff72badf8de4d1e6988ff17d4733d865f8c2b4d4",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "2a21304e631a899df48f5dffe363eb58d27cbf70f9cc1d75638111b1d3d3f222"
+ },
+ "m1": {
+  "hash": "94ba221f8e16",
+  "duration": 5.322,
+  "text": "所以我更希望 MCP 退回一个更小的位置：一层稳定的能力接口。",
+  "rate": 4.89,
+  "_contextHash": "66ea5d455a9252a19682fef0f70a4e3eb340a7a730d172032a1e8f7fe89c37b2",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "827745c59f08200c26a0227ed3225e7e61397a7f2c55b80c7a927ab23cb9cb9b"
+ },
+ "m2": {
+  "hash": "9ab26e22f222",
+  "duration": 5.396,
+  "text": "有什么能力，收什么输入，回什么输出。其余的，交给上层去试。",
+  "rate": 4.45,
+  "_contextHash": "ea0b2460519a43a2ff26ff3eb7748141517bc4b8b046ddfd2d5329e6d61f13a2",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "831e3d28474cfc7f3906b42cd5f0209dff8bf0b1dd83ebdd7e651080f0375d48"
+ },
+ "m3": {
+  "hash": "5b98cd75da9b",
+  "duration": 4.913,
+  "text": "它大概不会消失，反而会成为所有智能体都有的一根管道。",
+  "rate": 4.88,
+  "_contextHash": "2a4c4e0ea1c3a5176fb66211224b2dd52026fd9041430bf236a2bf93dd6da538",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "df3c1f26a5d78215b73a939c166ab88aab85918dafc44c562287779ebd4c8182"
+ },
+ "m4": {
+  "hash": "7dacbc3d3b8b",
+  "duration": 3.688,
+  "text": "只是当年我们想结束的，是适配各家的 API；",
+  "rate": 4.88,
+  "_contextHash": "92c3b3e3434b852063a92c45763e0b1dbf325cdb9f54c5142c802d47f00e3bc5",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "d1592519d844a45a2dc79c493842ff8b8d79f53a1d2469b92221abf5bc56af7b"
+ },
+ "m5": {
+  "hash": "340482979e54",
+  "duration": 4.501,
+  "text": "如果最后变成适配各家对 MCP 的理解，就有点讽刺了。",
+  "rate": 4.89,
+  "_contextHash": "8e4496ec8be641669dd86f6d8a84b4f38030ea60773b245a0fc9ee7639bed7e1",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "90e75e0b1c5e3aef77feb7ffc7754882dd003adebd00186f169e989a24faf9d1"
+ },
+ "e1": {
+  "hash": "012af3d82b59",
+  "duration": 6.263,
+  "text": "从 MCP 到代码模式，再到扩展、命令行、沙箱，每一步单看都有道理。",
+  "rate": 4.15,
+  "_contextHash": "15dfe08dca14d15bb70b1ff29d88568875f9cda3ed27114b43f2cb0aef0549dd",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "c0cb10343d36aae65282782ac3b00d9fa8cb09e6322c292e2ada7deb328e0094"
+ },
+ "e2": {
+  "hash": "9c0ffaee9687",
+  "duration": 4.163,
+  "text": "可把这一年摊开来看，我总会想起刘震云的一个书名。",
+  "rate": 5.29,
+  "_contextHash": "023738d5107a6079637e4f05e13ec2e0c6d70efa783154c0e7499f923674a9bf",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "a1195c338d2247384dd8d079592d5fcd1d3f80da9830af3774022a550d22792c"
+ },
+ "e3": {
+  "hash": "a0a1100a9e70",
+  "duration": 1.217,
+  "text": "一地鸡毛。",
+  "rate": 3.29,
+  "_contextHash": "e97a290a2cfe742a6ef27180017cd6b2fedbbb141f000e128c36bd971ff968bf",
+  "_processingHash": "f486755485af17ba588d1fcb684002f42813207f7829dc0c3fa44a11abd3326d",
+  "_processedAudioHash": "17be63397cef8f01b831ebaaab92e17def12533c990e07a123000658e1a412b3"
+ }
+}
