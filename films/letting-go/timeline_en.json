@@ -1,0 +1,647 @@
+{
+ "lang": "en",
+ "FPS": 24,
+ "DURATION": 246.277,
+ "shots": [
+  {
+   "kind": "notes",
+   "a": 0,
+   "b": 18.309,
+   "fi": 0.01,
+   "fo": 1.4,
+   "lines": [
+    "o1",
+    "o2"
+   ],
+   "o1": 1.63,
+   "o1_end": 9.919,
+   "o2": 10.629,
+   "o2_end": 17.399
+  },
+  {
+   "kind": "thesis",
+   "a": 16.909,
+   "b": 35.139,
+   "fi": 1.4,
+   "fo": 1.4,
+   "lines": [
+    "o3",
+    "o4",
+    "o5"
+   ],
+   "o3": 1.2299999999999969,
+   "o3_end": 5.6889999999999965,
+   "o4": 6.398999999999997,
+   "o4_end": 11.200999999999997,
+   "o5": 11.910999999999998,
+   "o5_end": 17.064999999999998
+  },
+  {
+   "kind": "title",
+   "a": 33.739,
+   "b": 39.339,
+   "fi": 1.4,
+   "fo": 0.8,
+   "lines": []
+  },
+  {
+   "kind": "era1",
+   "a": 38.539,
+   "b": 41.639,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "trace",
+   "a": 40.739,
+   "b": 59.228,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "a1": 0.8299999999999983,
+   "a1_end": 6.068999999999998,
+   "a2": 6.628999999999998,
+   "a2_end": 13.161999999999999,
+   "a3": 13.721999999999994,
+   "a3_end": 17.153999999999993
+  },
+  {
+   "kind": "era2",
+   "a": 58.428,
+   "b": 61.528,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "letter",
+   "a": 60.628,
+   "b": 83.288,
+   "fi": 0.9,
+   "fo": 1.2,
+   "lines": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "b1": 0.8299999999999841,
+   "b1_end": 8.381999999999984,
+   "b2": 8.941999999999979,
+   "b2_end": 14.384999999999978,
+   "b3": 14.944999999999979,
+   "b3_end": 21.74999999999998
+  },
+  {
+   "kind": "frames",
+   "a": 82.088,
+   "b": 93.746,
+   "fi": 1.2,
+   "fo": 0.8,
+   "lines": [
+    "b4"
+   ],
+   "b4": 0.6299999999999955,
+   "b4_end": 10.322999999999995
+  },
+  {
+   "kind": "era3",
+   "a": 92.946,
+   "b": 96.046,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "stones",
+   "a": 95.146,
+   "b": 110.177,
+   "fi": 0.9,
+   "fo": 1.2,
+   "lines": [
+    "c1",
+    "c2"
+   ],
+   "c1": 0.8299999999999983,
+   "c1_end": 7.405999999999998,
+   "c2": 8.016000000000005,
+   "c2_end": 14.121000000000006
+  },
+  {
+   "kind": "scholars",
+   "a": 108.977,
+   "b": 118.326,
+   "fi": 1.2,
+   "fo": 0.8,
+   "lines": [
+    "c3"
+   ],
+   "c3": 0.6299999999999955,
+   "c3_end": 8.183999999999996
+  },
+  {
+   "kind": "era4",
+   "a": 117.526,
+   "b": 120.626,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "patches",
+   "a": 119.726,
+   "b": 137.86,
+   "fi": 0.9,
+   "fo": 1.2,
+   "lines": [
+    "d1",
+    "d2"
+   ],
+   "d1": 0.8299999999999983,
+   "d1_end": 8.236999999999998,
+   "d2": 8.847000000000008,
+   "d2_end": 17.22400000000001
+  },
+  {
+   "kind": "scroll",
+   "a": 136.66,
+   "b": 145.416,
+   "fi": 1.2,
+   "fo": 0.8,
+   "lines": [
+    "d3"
+   ],
+   "d3": 0.629999999999967,
+   "d3_end": 7.420999999999967
+  },
+  {
+   "kind": "era5",
+   "a": 144.616,
+   "b": 147.716,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "reason",
+   "a": 146.816,
+   "b": 161.133,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "e1",
+    "e2"
+   ],
+   "e1": 0.8299999999999841,
+   "e1_end": 6.326999999999984,
+   "e2": 6.936999999999983,
+   "e2_end": 12.981999999999983
+  },
+  {
+   "kind": "era6",
+   "a": 160.333,
+   "b": 163.433,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "lamp",
+   "a": 162.533,
+   "b": 179.9,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "e3",
+    "e4"
+   ],
+   "e3": 0.8300000000000125,
+   "e3_end": 4.0880000000000125,
+   "e4": 4.648000000000025,
+   "e4_end": 16.202000000000027
+  },
+  {
+   "kind": "era7",
+   "a": 179.1,
+   "b": 182.2,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "letgo",
+   "a": 181.3,
+   "b": 205.83,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "g1",
+    "g2",
+    "g3"
+   ],
+   "g1": 0.8300000000000409,
+   "g1_end": 9.41700000000004,
+   "g2": 10.027000000000044,
+   "g2_end": 17.338000000000044,
+   "g3": 17.948000000000036,
+   "g3_end": 21.665000000000035,
+   "sweep": 20.708
+  },
+  {
+   "kind": "era8",
+   "a": 205.03,
+   "b": 208.13,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": []
+  },
+  {
+   "kind": "grading",
+   "a": 207.23,
+   "b": 217.259,
+   "fi": 0.9,
+   "fo": 1.4,
+   "lines": [
+    "f0"
+   ],
+   "f0": 0.8300000000000693,
+   "f0_end": 9.03400000000007
+  },
+  {
+   "kind": "seals",
+   "a": 215.859,
+   "b": 231.193,
+   "fi": 1.4,
+   "fo": 1.6,
+   "lines": [
+    "f1",
+    "f2"
+   ],
+   "f1": 1.230000000000075,
+   "f1_end": 3.994000000000075,
+   "f2": 4.804000000000087,
+   "f2_end": 14.339000000000087
+  },
+  {
+   "kind": "freehand",
+   "a": 229.593,
+   "b": 240.877,
+   "fi": 1.6,
+   "fo": 1.6,
+   "lines": [
+    "f3"
+   ],
+   "f3": 1.030000000000058,
+   "f3_end": 8.929000000000059
+  },
+  {
+   "kind": "end",
+   "a": 239.277,
+   "b": 245.777,
+   "fi": 1.6,
+   "fo": 1,
+   "lines": []
+  }
+ ],
+ "subs": [
+  {
+   "a": 1.5299999999999998,
+   "b": 10.269,
+   "text": "Some prompts read like a quiet request. Some, like a job description. Some, like a room papered with warnings."
+  },
+  {
+   "a": 10.529,
+   "b": 17.749,
+   "text": "Follow strictly. Omit nothing. Once again: never, ever break the rules."
+  },
+  {
+   "a": 18.038999999999998,
+   "b": 22.948,
+   "text": "But the history of prompting is not a history of ever more commands."
+  },
+  {
+   "a": 23.208,
+   "b": 28.46,
+   "text": "It is a boundary between a person and a model, always on the move."
+  },
+  {
+   "a": 28.72,
+   "b": 34.324,
+   "text": "What must a person spell out? And what can be left to its own judgment?"
+  },
+  {
+   "a": 41.469,
+   "b": 47.158,
+   "text": "At first, a model did not follow instructions. It could only keep writing."
+  },
+  {
+   "a": 47.268,
+   "b": 54.251,
+   "text": "So we did what children do with a copybook: write a few lines of examples, then leave one blank."
+  },
+  {
+   "a": 54.361,
+   "b": 58.243,
+   "text": "The answer was simply the most natural next stroke."
+  },
+  {
+   "a": 61.358,
+   "b": 69.36,
+   "text": "At the end of 2022, ChatGPT arrived. We could finally just say: please, do this for me."
+  },
+  {
+   "a": 69.47,
+   "b": 75.363,
+   "text": "So some wrote: you are a world-class expert with twenty years of experience."
+  },
+  {
+   "a": 75.473,
+   "b": 82.728,
+   "text": "What actually helped was simpler: who it is for, what it is for, and what must not change."
+  },
+  {
+   "a": 82.61800000000001,
+   "b": 92.761,
+   "text": "Then a one-line wish got wrapped in role, background, goal, constraints, workflow... a tiny sketch inside ten frames."
+  },
+  {
+   "a": 95.876,
+   "b": 102.902,
+   "text": "Next, we taught it how to think. The most famous line: let’s think step by step."
+  },
+  {
+   "a": 103.06200000000001,
+   "b": 109.617,
+   "text": "If a path went wrong, turn back. If one path was not enough, branch into many."
+  },
+  {
+   "a": 109.507,
+   "b": 117.511,
+   "text": "Some asked it to play five experts in a meeting. But painting five scholars in is not the same as holding one."
+  },
+  {
+   "a": 120.456,
+   "b": 128.313,
+   "text": "In real products, every mistake earned another notice on the wall: no explanations, only the tags."
+  },
+  {
+   "a": 128.473,
+   "b": 137.3,
+   "text": "One patch covered a crack and pulled open another. Replace every single quote with a double quote, and O’Connor breaks too."
+  },
+  {
+   "a": 137.19,
+   "b": 144.431,
+   "text": "Later, the interface took over keeping the format. Whether the picture is true still needs a human eye."
+  },
+  {
+   "a": 147.546,
+   "b": 153.493,
+   "text": "In 2024, models began to be trained to reason on their own."
+  },
+  {
+   "a": 153.653,
+   "b": 160.148,
+   "text": "Writing out “step one, step two” often stopped helping, and sometimes got in the way."
+  },
+  {
+   "a": 163.263,
+   "b": 166.971,
+   "text": "The question became: what can it actually see?"
+  },
+  {
+   "a": 167.08100000000002,
+   "b": 179.085,
+   "text": "If it changed the wrong thing, perhaps it was not careless. It had only seen the old plans. Writing “read carefully” three times cannot add a page it never saw."
+  },
+  {
+   "a": 182.03,
+   "b": 191.067,
+   "text": "By 2026, one team deleted more than eighty percent of its old prompt, and the work did not get worse."
+  },
+  {
+   "a": 191.227,
+   "b": 198.988,
+   "text": "An iron rule like “never write comments” became a single line: follow the style already around you."
+  },
+  {
+   "a": 199.148,
+   "b": 203.315,
+   "text": "The old constraints had been blocking... a better stroke."
+  },
+  {
+   "a": 207.96,
+   "b": 216.614,
+   "text": "From here, a prompt becomes something with versions and tests: remove a rule, try again, keep what helps."
+  },
+  {
+   "a": 216.989,
+   "b": 220.203,
+   "text": "Letting go does not mean saying nothing."
+  },
+  {
+   "a": 220.56300000000002,
+   "b": 230.548,
+   "text": "What you hope to make, why it is worth making, what it must not cost, and what counts as good. Those are still yours to decide."
+  },
+  {
+   "a": 230.523,
+   "b": 238.872,
+   "text": "The stronger the model, the less we should plan its every step, and the more clearly we should say what is worth doing."
+  }
+ ],
+ "captions": [
+  {
+   "a": 41.639,
+   "b": 58.72800000000001,
+   "text": "I · Continuation"
+  },
+  {
+   "a": 61.52800000000001,
+   "b": 82.78800000000001,
+   "text": "II · Instructions"
+  },
+  {
+   "a": 96.046,
+   "b": 109.677,
+   "text": "III · Steps"
+  },
+  {
+   "a": 120.626,
+   "b": 137.36,
+   "text": "IV · Patches"
+  },
+  {
+   "a": 147.716,
+   "b": 160.633,
+   "text": "V · Reasoning"
+  },
+  {
+   "a": 163.433,
+   "b": 179.39999999999998,
+   "text": "VI · Context"
+  },
+  {
+   "a": 182.19999999999996,
+   "b": 205.32999999999996,
+   "text": "VII · Letting Go"
+  },
+  {
+   "a": 208.12999999999994,
+   "b": 216.75899999999993,
+   "text": "VIII · Next"
+  }
+ ],
+ "labels": [],
+ "vo": [
+  {
+   "id": "o1",
+   "t": 1.63,
+   "d": 8.289
+  },
+  {
+   "id": "o2",
+   "t": 10.629,
+   "d": 6.77
+  },
+  {
+   "id": "o3",
+   "t": 18.139,
+   "d": 4.459
+  },
+  {
+   "id": "o4",
+   "t": 23.308,
+   "d": 4.802
+  },
+  {
+   "id": "o5",
+   "t": 28.82,
+   "d": 5.154
+  },
+  {
+   "id": "a1",
+   "t": 41.569,
+   "d": 5.239
+  },
+  {
+   "id": "a2",
+   "t": 47.368,
+   "d": 6.533
+  },
+  {
+   "id": "a3",
+   "t": 54.461,
+   "d": 3.432
+  },
+  {
+   "id": "b1",
+   "t": 61.458,
+   "d": 7.552
+  },
+  {
+   "id": "b2",
+   "t": 69.57,
+   "d": 5.443
+  },
+  {
+   "id": "b3",
+   "t": 75.573,
+   "d": 6.805
+  },
+  {
+   "id": "b4",
+   "t": 82.718,
+   "d": 9.693
+  },
+  {
+   "id": "c1",
+   "t": 95.976,
+   "d": 6.576
+  },
+  {
+   "id": "c2",
+   "t": 103.162,
+   "d": 6.105
+  },
+  {
+   "id": "c3",
+   "t": 109.607,
+   "d": 7.554
+  },
+  {
+   "id": "d1",
+   "t": 120.556,
+   "d": 7.407
+  },
+  {
+   "id": "d2",
+   "t": 128.573,
+   "d": 8.377
+  },
+  {
+   "id": "d3",
+   "t": 137.29,
+   "d": 6.791
+  },
+  {
+   "id": "e1",
+   "t": 147.646,
+   "d": 5.497
+  },
+  {
+   "id": "e2",
+   "t": 153.753,
+   "d": 6.045
+  },
+  {
+   "id": "e3",
+   "t": 163.363,
+   "d": 3.258
+  },
+  {
+   "id": "e4",
+   "t": 167.181,
+   "d": 11.554
+  },
+  {
+   "id": "g1",
+   "t": 182.13,
+   "d": 8.587
+  },
+  {
+   "id": "g2",
+   "t": 191.327,
+   "d": 7.311
+  },
+  {
+   "id": "g3",
+   "t": 199.248,
+   "d": 3.717
+  },
+  {
+   "id": "f0",
+   "t": 208.06,
+   "d": 8.204
+  },
+  {
+   "id": "f1",
+   "t": 217.089,
+   "d": 2.764
+  },
+  {
+   "id": "f2",
+   "t": 220.663,
+   "d": 9.535
+  },
+  {
+   "id": "f3",
+   "t": 230.623,
+   "d": 7.899
+  }
+ ]
+}

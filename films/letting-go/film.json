@@ -1,0 +1,47 @@
+{
+  "id": "letting-go",
+  "title": {
+    "zh": "放手",
+    "en": "Letting Go"
+  },
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "output": {
+    "zh": "放手",
+    "en": "LettingGo"
+  },
+  "fps": 24,
+  "breath": {
+    "zh": 0.15,
+    "en": 0.06
+  },
+  "narration": {
+    "zh": {
+      "voice": "hFamrilbAE6WDMtWgKvu",
+      "voiceName": "Pangge",
+      "model": "eleven_v4",
+      "languageCode": "zh",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "speed": 1.0
+      },
+      "paceCap": 6.0
+    },
+    "en": {
+      "voice": "QngvLQR8bsLR5bzoa6Vv",
+      "voiceName": "Michael Dan",
+      "model": "eleven_v4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "speed": 0.92
+      },
+      "paceCapRelative": 1.12
+    }
+  },
+  "images": []
+}

@@ -43,6 +43,14 @@
 
 ▶ **观看**：[E · Ian](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-E-zh.mp4) · [F · Evan Zhao](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-F-zh.mp4)　|　[制作入口](films/mcp/) · [原文](films/mcp/article.md)
 
+### 放手 · Letting Go　<sub>约 4 分钟 · 中文 / English · 水墨 · 1080p</sub>
+
+> 模型越强，我们越该少替它安排每一步，多把值得完成的事，交代清楚。
+
+一部关于提示词演进的水墨短片，通篇没有一块屏幕、一行代码。朱红是人的指导：描红、告示、引线、印章；墨色是模型自己的笔：先描，再跟，最后自己写。八个阶段，从 2019 年的续写，到嘱咐、步骤、补丁、推理、上下文，再到 2026 年的放手与今后；每一段都在画面上写出那个年代的真实提示词。
+
+▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-en.mp4)　|　[关于这部片子与制作入口](films/letting-go/) · [公众号文案](films/letting-go/公众号文案.md)
+
 ---
 
 ## 这套工作流能做什么
@@ -239,6 +247,7 @@ engine/pipeline/     流水线：tts · vo_trim · vo_pace · vo_check · build_
 films/ordinary/      《凡人》
 films/ai-steward/    《AI 越来越能干，人为什么越来越忙？》· HyperFrames 白板版
 films/mcp/           《MCP 跑偏了》· HyperFrames · E/F 两种旁白
+films/letting-go/    《放手》· 水墨 · 中英双语
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>

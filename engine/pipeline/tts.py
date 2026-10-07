@@ -12,6 +12,10 @@ NAR = CONFIG['narration']
 VOICE = {l: NAR[l]['voice'] for l in LANGS}
 MODEL = {l: NAR[l].get('model', 'eleven_v4') for l in LANGS}
 SETTINGS = {l: NAR[l].get('settings', {}) for l in LANGS}
+# 可选：prefix 是只发给合成、不进字幕的表演提示（如 eleven_v3 的 [serious] 标签）；
+# context=false 时不发上下句（eleven_v3 不支持 previous_text / next_text）
+PREFIX = {l: NAR[l].get('prefix', '') for l in LANGS}
+CONTEXT = {l: NAR[l].get('context', True) for l in LANGS}
 
 
 def cli_tts(voice, body, out):
@@ -40,15 +44,16 @@ def synth(lang, force=False):
     items = list(lines().items())
     for i, (lid, texts) in enumerate(items):
         text = texts[L]
-        h = hashlib.sha1(json.dumps([text, VOICE[lang], MODEL[lang], SETTINGS[lang]]).encode()).hexdigest()[:12]
+        key = [text, VOICE[lang], MODEL[lang], SETTINGS[lang]] + ([PREFIX[lang], CONTEXT[lang]] if PREFIX[lang] or not CONTEXT[lang] else [])
+        h = hashlib.sha1(json.dumps(key).encode()).hexdigest()[:12]
         wav = os.path.join(d, f'{lid}.wav')
         if not force and manifest.get(lid, {}).get('hash') == h and os.path.exists(os.path.join(d, f'{lid}.mp3')):
             continue
-        body = {'text': text, 'model_id': MODEL[lang], 'voice_settings': SETTINGS[lang]}
+        body = {'text': PREFIX[lang] + text, 'model_id': MODEL[lang], 'voice_settings': SETTINGS[lang]}
         if NAR[lang].get('languageCode'): body['language_code'] = NAR[lang]['languageCode']
         # 上下文让语调连贯
-        if i > 0: body['previous_text'] = items[i - 1][1][L]
-        if i < len(items) - 1: body['next_text'] = items[i + 1][1][L]
+        if CONTEXT[lang] and i > 0: body['previous_text'] = items[i - 1][1][L]
+        if CONTEXT[lang] and i < len(items) - 1: body['next_text'] = items[i + 1][1][L]
         raw = os.path.join(d, f'{lid}.mp3')
         for attempt in range(4):
             try:

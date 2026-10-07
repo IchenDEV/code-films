@@ -43,6 +43,14 @@ A technical essay about authorization, client compatibility, execution sandboxes
 
 ▶ **Watch**: [E · Ian](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-E-zh.mp4) · [F · Evan Zhao](https://github.com/IchenDEV/code-films/releases/download/mcp-v1.0/mcp-F-zh.mp4)　|　[Build commands](films/mcp/) · [Chinese article](films/mcp/article.md)
 
+### Letting Go · 放手　<sub>~4 min · Chinese / English · ink wash · 1080p</sub>
+
+> The stronger the model, the less we should plan its every step, and the more clearly we should say what is worth doing.
+
+An ink-wash film about how prompting has changed, with no screens and no code on screen. Vermilion is the human's guidance: copybook tracing, warning notes, guide lines, seals. Black ink is the model's own hand: it traces, then follows, then writes alone. Eight eras from 2019 to 2026 and beyond, each shown with a real prompt of its time.
+
+▶ **Watch**: [Chinese](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-en.mp4)　|　[About the film and build commands](films/letting-go/)
+
 ---
 
 ## What the pipeline does

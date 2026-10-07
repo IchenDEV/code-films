@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>放手 · Letting Go</title>
+<style>
+  @font-face { font-family: "LG Brush"; src: url("fonts/brush.ttf"); }
+  @font-face { font-family: "LG Kai"; src: url("fonts/kai.ttf"); }
+  @font-face { font-family: "LG Garamond"; src: url("fonts/garamond.ttf"); font-style: normal; }
+  @font-face { font-family: "LG Garamond"; src: url("fonts/garamond-italic.ttf"); font-style: italic; }
+  html, body { margin: 0; background: #000; color: #bbb; font: 13px/1.4 system-ui, sans-serif; }
+  canvas { display: block; width: 100vw; max-width: 1920px; aspect-ratio: 16 / 9; margin: 0 auto; }
+  #ui { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 12px; align-items: center;
+        padding: 10px 16px; background: linear-gradient(transparent, rgba(0,0,0,.8)); }
+  #ui input { flex: 1; }
+  #ui button { background: #222; color: #ddd; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui" hidden>
+  <button id="play">播放 / 暂停</button>
+  <input id="t" type="range" min="0" step="0.01" value="0">
+  <span id="lab">0.00s</span>
+  <audio id="aud" preload="auto"></audio>
+</div>
+<script>
+  const LANG = new URLSearchParams(location.search).get('lang') || 'zh';
+  document.write(`<script src="timeline_${LANG}.js"><\/script>`);
+</script>
+<script src="../../engine/web/core.js"></script>
+<script src="../../engine/web/text.js"></script>
+<script src="../../engine/web/archive.js"></script>
+<script src="../../engine/web/assets.js"></script>
+<script src="style.js"></script>
+<script src="shots/opening.js"></script>
+<script src="shots/era.js"></script>
+<script src="shots/chapters.js"></script>
+<script src="shots/closing.js"></script>
+<script src="../../engine/web/main.js"></script>
+</body>
+</html>
