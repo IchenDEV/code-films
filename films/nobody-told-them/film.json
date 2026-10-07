@@ -1,0 +1,15 @@
+{
+  "id": "nobody-told-them",
+  "title": { "zh": "初生牛犊", "en": "Nobody Told Them" },
+  "languages": ["zh", "en"],
+  "output": { "zh": "初生牛犊", "en": "NobodyToldThem" },
+  "fps": 24,
+  "breath": { "zh": 0.15, "en": 0.06 },
+  "narration": {
+    "zh": { "voice": "hFamrilbAE6WDMtWgKvu", "voiceName": "Pangge", "model": "eleven_v4", "languageCode": "zh",
+            "settings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.3, "speed": 1.0 }, "paceCap": 6.0 },
+    "en": { "voice": "QngvLQR8bsLR5bzoa6Vv", "voiceName": "Michael Dan", "model": "eleven_v4",
+            "settings": { "stability": 0.45, "similarity_boost": 0.8, "style": 0.25, "speed": 0.98 }, "paceCapRelative": 1.15 }
+  },
+  "images": []
+}

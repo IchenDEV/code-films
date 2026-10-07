@@ -51,6 +51,16 @@ An ink-wash film about how prompting has changed, with no screens and no code on
 
 ▶ **Watch**: [Chinese](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-en.mp4)　|　[About the film and build commands](films/letting-go/)
 
+### Nobody Told Them · 初生牛犊　<sub>~4 min · Chinese / English · risograph · 1080p</sub>
+
+> The future is going to be weird. And probably pretty cool.
+
+A risograph zine adaptation of Theo’s (t3.gg) talk: from AI helping with familiar work, to entering systems people could barely touch, to making real things without knowing all the rules. It follows the moments when being an outsider becomes an advantage.
+
+▶ **Watch**: [中文](https://github.com/IchenDEV/code-films/releases/download/nobody-told-them-v1.0/nobody-told-them-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/nobody-told-them-v1.0/nobody-told-them-en.mp4)　|　[About the film and build commands](films/nobody-told-them/)
+
+<img src="docs/images/nobody-told-them-stills.jpg" alt="Stills from Nobody Told Them" width="100%">
+
 ---
 
 ## What the pipeline does

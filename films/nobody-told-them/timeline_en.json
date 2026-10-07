@@ -1,0 +1,590 @@
+{
+ "lang": "en",
+ "FPS": 24,
+ "DURATION": 257.559,
+ "shots": [
+  {
+   "kind": "title",
+   "a": 0,
+   "b": 5,
+   "fi": 0.01,
+   "fo": 1,
+   "lines": []
+  },
+  {
+   "kind": "ladder",
+   "a": 4,
+   "b": 13.451,
+   "fi": 1,
+   "fo": 0.8,
+   "lines": [
+    "p1"
+   ],
+   "p1": 0.6299999999999999,
+   "p1_end": 8.370999999999999
+  },
+  {
+   "kind": "bubble",
+   "a": 12.651,
+   "b": 24.311,
+   "fi": 0.8,
+   "fo": 0.8,
+   "lines": [
+    "t1",
+    "t2"
+   ],
+   "t1": 0.6300000000000008,
+   "t1_end": 7.928000000000001,
+   "t2": 8.488,
+   "t2_end": 10.92
+  },
+  {
+   "kind": "crab",
+   "a": 23.511,
+   "b": 38.142,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": [
+    "t3",
+    "t4"
+   ],
+   "t3": 0.5300000000000011,
+   "t3_end": 8.846000000000002,
+   "t4": 9.406000000000002,
+   "t4_end": 13.806000000000003
+  },
+  {
+   "kind": "deep",
+   "a": 37.242,
+   "b": 51.362,
+   "fi": 0.9,
+   "fo": 0.9,
+   "lines": [
+    "t5"
+   ],
+   "t5": 0.5300000000000011,
+   "t5_end": 12.870000000000001
+  },
+  {
+   "kind": "tanks",
+   "a": 50.462,
+   "b": 91.653,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "g1",
+    "g2",
+    "g3",
+    "g4"
+   ],
+   "g1": 0.6300000000000026,
+   "g1_end": 9.237000000000002,
+   "g2": 9.797000000000004,
+   "g2_end": 16.813000000000002,
+   "g3": 17.372999999999998,
+   "g3_end": 28.732999999999997,
+   "g4": 29.293,
+   "g4_end": 40.281
+  },
+  {
+   "kind": "maps",
+   "a": 90.853,
+   "b": 99.222,
+   "fi": 0.8,
+   "fo": 0.8,
+   "lines": [
+    "g5"
+   ],
+   "g5": 0.5300000000000011,
+   "g5_end": 7.629000000000001
+  },
+  {
+   "kind": "rope",
+   "a": 98.422,
+   "b": 109.36,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": [
+    "g6"
+   ],
+   "g6": 0.5300000000000011,
+   "g6_end": 9.858
+  },
+  {
+   "kind": "bricks",
+   "a": 108.46,
+   "b": 123.177,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "w1",
+    "w2"
+   ],
+   "w1": 0.6300000000000097,
+   "w1_end": 5.14400000000001,
+   "w2": 5.704000000000008,
+   "w2_end": 13.977000000000007
+  },
+  {
+   "kind": "layers",
+   "a": 122.377,
+   "b": 138.099,
+   "fi": 0.8,
+   "fo": 0.8,
+   "lines": [
+    "w3",
+    "w4"
+   ],
+   "w3": 0.5300000000000011,
+   "w3_end": 11.170000000000002,
+   "w4": 11.730000000000004,
+   "w4_end": 14.897000000000004
+  },
+  {
+   "kind": "envfile",
+   "a": 137.299,
+   "b": 148.44,
+   "fi": 0.8,
+   "fo": 0.8,
+   "lines": [
+    "w5"
+   ],
+   "w5": 0.5300000000000296,
+   "w5_end": 10.31600000000003
+  },
+  {
+   "kind": "music",
+   "a": 147.64,
+   "b": 163.649,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": [
+    "w6"
+   ],
+   "w6": 0.5300000000000296,
+   "w6_end": 14.929000000000029
+  },
+  {
+   "kind": "trash",
+   "a": 162.749,
+   "b": 181.851,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "y1",
+    "y2",
+    "y3"
+   ],
+   "y1": 0.6300000000000523,
+   "y1_end": 5.9180000000000526,
+   "y2": 6.4780000000000655,
+   "y2_end": 13.524000000000065,
+   "y3": 14.08400000000006,
+   "y3_end": 18.36200000000006
+  },
+  {
+   "kind": "tower",
+   "a": 181.051,
+   "b": 195.381,
+   "fi": 0.8,
+   "fo": 0.9,
+   "lines": [
+    "y4"
+   ],
+   "y4": 0.530000000000058,
+   "y4_end": 13.250000000000059
+  },
+  {
+   "kind": "shells",
+   "a": 194.481,
+   "b": 212.094,
+   "fi": 0.9,
+   "fo": 0.9,
+   "lines": [
+    "o1",
+    "o2"
+   ],
+   "o1": 0.6300000000000523,
+   "o1_end": 3.619000000000052,
+   "o2": 4.279000000000053,
+   "o2_end": 16.703000000000053
+  },
+  {
+   "kind": "fence",
+   "a": 211.194,
+   "b": 224.76,
+   "fi": 0.9,
+   "fo": 0.8,
+   "lines": [
+    "x1",
+    "x2"
+   ],
+   "x1": 0.6300000000000807,
+   "x1_end": 6.04100000000008,
+   "x2": 6.601000000000056,
+   "x2_end": 12.741000000000057
+  },
+  {
+   "kind": "wrong",
+   "a": 223.96,
+   "b": 244.295,
+   "fi": 0.8,
+   "fo": 0.8,
+   "lines": [
+    "x3",
+    "x4"
+   ],
+   "x3": 0.5300000000000864,
+   "x3_end": 9.890000000000086,
+   "x4": 10.650000000000091,
+   "x4_end": 19.42500000000009
+  },
+  {
+   "kind": "weird",
+   "a": 243.495,
+   "b": 251.259,
+   "fi": 0.8,
+   "fo": 1.2,
+   "lines": [
+    "x5"
+   ],
+   "x5": 0.6300000000000807,
+   "x5_end": 5.154000000000081
+  },
+  {
+   "kind": "end",
+   "a": 250.059,
+   "b": 257.059,
+   "fi": 1.2,
+   "fo": 1,
+   "lines": []
+  }
+ ],
+ "subs": [
+  {
+   "a": 4.53,
+   "b": 12.721,
+   "text": "Theo once drew a ladder in his head: how people use AI, and how it changes each time the models get better."
+  },
+  {
+   "a": 13.181000000000001,
+   "b": 20.929,
+   "text": "Rung one: AI helps with what you already know. It finishes a line, or tweaks a tool you use."
+  },
+  {
+   "a": 21.038999999999998,
+   "b": 23.921,
+   "text": "Everything stays in your little bubble."
+  },
+  {
+   "a": 23.941,
+   "b": 32.707,
+   "text": "Rung two: you let it go where you don’t quite understand. Theo ships Rust projects, and he barely knows Rust."
+  },
+  {
+   "a": 32.817,
+   "b": 37.667,
+   "text": "He isn’t really writing the code. The users are real."
+  },
+  {
+   "a": 37.672,
+   "b": 50.462,
+   "text": "Rung three is the crazy one: opening up compiled code like Super Mario 64. No one person fully understands it. AI understands it well enough to work inside."
+  },
+  {
+   "a": 50.992,
+   "b": 60.049,
+   "text": "Every time models level up, they lift different people: developers, technical people who don’t code, and non-technical people."
+  },
+  {
+   "a": 60.159,
+   "b": 67.625,
+   "text": "At first it was mostly developers. Then technical people started editing sites and writing scripts."
+  },
+  {
+   "a": 67.735,
+   "b": 79.545,
+   "text": "By Opus 4.5, people who had barely coded could build apps. Fable 5 sent developers leaping ahead, and Theo thought the gap would only widen."
+  },
+  {
+   "a": 79.655,
+   "b": 91.093,
+   "text": "Then came Opus 5.5. What changed wasn’t power, it was access: one model that does almost anything, at a price people can reach."
+  },
+  {
+   "a": 91.283,
+   "b": 98.832,
+   "text": "People who had never opened Blender began porting maps from childhood games into games they had reverse engineered."
+  },
+  {
+   "a": 98.852,
+   "b": 108.63,
+   "text": "Non-technical people haven’t moved as far yet. That’s the opportunity: whoever fixed their mom’s computer can now solve much more for her."
+  },
+  {
+   "a": 108.99000000000001,
+   "b": 113.954,
+   "text": "Theo’s spiciest take: developers aren’t especially creative."
+  },
+  {
+   "a": 114.06400000000001,
+   "b": 122.787,
+   "text": "We’re great at delivering code. But much of what we call creativity is linking existing libraries in a slightly new way."
+  },
+  {
+   "a": 122.807,
+   "b": 133.897,
+   "text": "Meanwhile, technical non-coders forced unrelated systems together with Zapier. One built forty thousand scenes in OBS, stacked like layers."
+  },
+  {
+   "a": 134.007,
+   "b": 137.624,
+   "text": "Nothing like how it was designed. But it works."
+  },
+  {
+   "a": 137.729,
+   "b": 147.965,
+   "text": "He asked: why can’t we commit our env files? Because secrets. But are today’s boundaries right, or just how the tools happened to grow?"
+  },
+  {
+   "a": 148.07,
+   "b": 162.919,
+   "text": "Music does this all the time: someone copies a distant style wrong, mixes in something local, and a new sound is born. Software will too, from people who don’t know what they’re not supposed to ask for."
+  },
+  {
+   "a": 163.279,
+   "b": 169.017,
+   "text": "Crazy experiments are open to everyone now. But you have to be willing to fail."
+  },
+  {
+   "a": 169.127,
+   "b": 176.623,
+   "text": "A developer gets two thousand lines from two hours with AI, and still guards it like a week of work."
+  },
+  {
+   "a": 176.733,
+   "b": 181.461,
+   "text": "A non-coder thinks: let’s see if this works. If not, fine."
+  },
+  {
+   "a": 181.481,
+   "b": 194.651,
+   "text": "Theo tried to invent a task AI couldn’t do: rewrite the TypeScript compiler in Rust. It ran in under twenty hours, and now beats the Go version by two to three times."
+  },
+  {
+   "a": 195.011,
+   "b": 198.45,
+   "text": "Goals matter more than technical preferences."
+  },
+  {
+   "a": 198.66,
+   "b": 211.534,
+   "text": "He’s building an operating system with almost none of his taste in it: Bash, not Zsh, because a third of his agents’ errors came from the shell. It’s not for him. It’s for his agents."
+  },
+  {
+   "a": 211.72400000000002,
+   "b": 217.585,
+   "text": "Expertise can become a constraint. It teaches us what doesn’t belong together."
+  },
+  {
+   "a": 217.695,
+   "b": 224.285,
+   "text": "That high school friend whose answer to everything was “install Ubuntu” might run laps around you."
+  },
+  {
+   "a": 224.39000000000001,
+   "b": 234.2,
+   "text": "Theo says: I was wrong. He thought the gap between developers and everyone else would keep widening. Now he isn’t so sure."
+  },
+  {
+   "a": 234.51000000000002,
+   "b": 243.735,
+   "text": "Imagination, taste, asking stupid questions, throwing away failed work: these will matter more and more."
+  },
+  {
+   "a": 244.025,
+   "b": 248.999,
+   "text": "The future is going to be weird. And probably pretty cool."
+  }
+ ],
+ "captions": [
+  {
+   "a": 13.551,
+   "b": 23.811,
+   "text": "01 · THE LADDER"
+  },
+  {
+   "a": 51.361999999999995,
+   "b": 91.15299999999999,
+   "text": "02 · THE TIDE"
+  },
+  {
+   "a": 109.36,
+   "b": 122.67699999999999,
+   "text": "03 · THE WEIRDOS"
+  },
+  {
+   "a": 163.64899999999994,
+   "b": 181.35099999999994,
+   "text": "04 · THROW IT AWAY"
+  },
+  {
+   "a": 195.38099999999994,
+   "b": 211.59399999999994,
+   "text": "05 · THE GOAL"
+  },
+  {
+   "a": 212.09399999999994,
+   "b": 224.25999999999993,
+   "text": "06 · I WAS WRONG"
+  }
+ ],
+ "labels": [],
+ "vo": [
+  {
+   "id": "p1",
+   "t": 4.63,
+   "d": 7.741
+  },
+  {
+   "id": "t1",
+   "t": 13.281,
+   "d": 7.298
+  },
+  {
+   "id": "t2",
+   "t": 21.139,
+   "d": 2.432
+  },
+  {
+   "id": "t3",
+   "t": 24.041,
+   "d": 8.316
+  },
+  {
+   "id": "t4",
+   "t": 32.917,
+   "d": 4.4
+  },
+  {
+   "id": "t5",
+   "t": 37.772,
+   "d": 12.34
+  },
+  {
+   "id": "g1",
+   "t": 51.092,
+   "d": 8.607
+  },
+  {
+   "id": "g2",
+   "t": 60.259,
+   "d": 7.016
+  },
+  {
+   "id": "g3",
+   "t": 67.835,
+   "d": 11.36
+  },
+  {
+   "id": "g4",
+   "t": 79.755,
+   "d": 10.988
+  },
+  {
+   "id": "g5",
+   "t": 91.383,
+   "d": 7.099
+  },
+  {
+   "id": "g6",
+   "t": 98.952,
+   "d": 9.328
+  },
+  {
+   "id": "w1",
+   "t": 109.09,
+   "d": 4.514
+  },
+  {
+   "id": "w2",
+   "t": 114.164,
+   "d": 8.273
+  },
+  {
+   "id": "w3",
+   "t": 122.907,
+   "d": 10.64
+  },
+  {
+   "id": "w4",
+   "t": 134.107,
+   "d": 3.167
+  },
+  {
+   "id": "w5",
+   "t": 137.829,
+   "d": 9.786
+  },
+  {
+   "id": "w6",
+   "t": 148.17,
+   "d": 14.399
+  },
+  {
+   "id": "y1",
+   "t": 163.379,
+   "d": 5.288
+  },
+  {
+   "id": "y2",
+   "t": 169.227,
+   "d": 7.046
+  },
+  {
+   "id": "y3",
+   "t": 176.833,
+   "d": 4.278
+  },
+  {
+   "id": "y4",
+   "t": 181.581,
+   "d": 12.72
+  },
+  {
+   "id": "o1",
+   "t": 195.111,
+   "d": 2.989
+  },
+  {
+   "id": "o2",
+   "t": 198.76,
+   "d": 12.424
+  },
+  {
+   "id": "x1",
+   "t": 211.824,
+   "d": 5.411
+  },
+  {
+   "id": "x2",
+   "t": 217.795,
+   "d": 6.14
+  },
+  {
+   "id": "x3",
+   "t": 224.49,
+   "d": 9.36
+  },
+  {
+   "id": "x4",
+   "t": 234.61,
+   "d": 8.775
+  },
+  {
+   "id": "x5",
+   "t": 244.125,
+   "d": 4.524
+  }
+ ]
+}

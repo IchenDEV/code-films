@@ -51,6 +51,17 @@
 
 ▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/letting-go-v1.0/letting-go-en.mp4)　|　[关于这部片子与制作入口](films/letting-go/) · [公众号文案](films/letting-go/公众号文案.md)
 
+### 初生牛犊 · Nobody Told Them　<sub>约 4 分钟 · 中文 / English · 孔版印刷 · 1080p</sub>
+
+> 未来会很怪。也许，还很酷。
+> *The future is going to be weird. And probably pretty cool.*
+
+从 AI 帮你做熟悉的事，到替你进入更深的系统，再到让不懂技术的人也能造出真实作品——这是一部根据 Theo（t3.gg）演讲改编的孔版印刷小册子风格短片，记录那些“不会”反而成为优势的时刻。
+
+▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/nobody-told-them-v1.0/nobody-told-them-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/nobody-told-them-v1.0/nobody-told-them-en.mp4)　|　[关于这部片子与制作入口](films/nobody-told-them/)
+
+<img src="docs/images/nobody-told-them-stills.jpg" alt="《初生牛犊 · Nobody Told Them》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么
