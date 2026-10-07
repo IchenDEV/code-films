@@ -61,6 +61,16 @@ A risograph zine adaptation of Theo’s (t3.gg) talk: from AI helping with famil
 
 <img src="docs/images/nobody-told-them-stills.jpg" alt="Stills from Nobody Told Them" width="100%">
 
+### Headcount · 编制　<sub>4:38 Chinese · 5:17 English · paper collage · 1080p</sub>
+
+> Let the work create the team. Not the headcount create the work.
+
+A bilingual essay film against AI bureaucracy. Spawn workers when the task needs them, then reclaim them; split only when parallel reads, independent review, or permission isolation earn their coordination cost. The scheduler itself can grow into another layer of management.
+
+▶ **Watch**: [中文](https://github.com/IchenDEV/code-films/releases/download/headcount-v1.0/headcount-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/headcount-v1.0/headcount-en.mp4)　|　[About the film and build commands](films/headcount/)
+
+<img src="docs/images/headcount-stills.jpg" alt="Stills from Headcount" width="100%">
+
 ---
 
 ## What the pipeline does

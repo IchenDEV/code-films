@@ -62,6 +62,17 @@
 
 <img src="docs/images/nobody-told-them-stills.jpg" alt="《初生牛犊 · Nobody Told Them》剧照" width="100%">
 
+### 编制 · Headcount　<sub>4:38 中文 · 5:17 English · 纸艺拼贴 · 1080p</sub>
+
+> 任务应当催生组织，而不是编制滋生任务。
+> *Let the work create the team. Not the headcount create the work.*
+
+一部反对 AI 官僚主义的双语短片：任务需要时再派生执行实例，结束后回收；只有并行读取、独立复核或权限隔离确有收益时才拆分，同时警惕调度者自己长成新的管理层。
+
+▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/headcount-v1.0/headcount-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/headcount-v1.0/headcount-en.mp4)　|　[关于这部片子与制作入口](films/headcount/)
+
+<img src="docs/images/headcount-stills.jpg" alt="《编制 · Headcount》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么
@@ -259,6 +270,8 @@ films/ordinary/      《凡人》
 films/ai-steward/    《AI 越来越能干，人为什么越来越忙？》· HyperFrames 白板版
 films/mcp/           《MCP 跑偏了》· HyperFrames · E/F 两种旁白
 films/letting-go/    《放手》· 水墨 · 中英双语
+films/nobody-told-them/ 《初生牛犊》· 孔版印刷 · 中英双语
+films/headcount/     《编制》· 纸艺拼贴 · 中英双语
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>
