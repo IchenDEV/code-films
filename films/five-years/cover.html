@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>五年 · 封面</title>
+<style>
+  @font-face { font-family: "FY Display"; src: url("fonts/display-zh.ttf"); }
+  @font-face { font-family: "FY Black"; src: url("fonts/black-en.ttf"); }
+  @font-face { font-family: "FY Num"; src: url("fonts/num.ttf"); }
+  @font-face { font-family: "FY Mono"; src: url("fonts/mono.ttf"); font-weight: 100 900; }
+  @font-face { font-family: "FY Inter"; src: url("fonts/ui.ttf"); font-weight: 100 900; }
+  html, body { margin: 0; background: #000; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+  // ?lang=zh|en&size=1080x1440&kind=vertical|wide
+  const P = new URLSearchParams(location.search);
+  window.TL = { lang: P.get('lang') || 'zh', fmt: 'c', cut: 'short', shots: [], caps: [], chips: [], eras: [], txt: {} };
+</script>
+<script src="web/engine.js"></script>
+<script src="web/shots/a.js"></script>
+<script src="web/cover.js"></script>
+</body>
+</html>

@@ -73,6 +73,16 @@
 
 <img src="docs/images/headcount-stills.jpg" alt="《编制 · Headcount》剧照" width="100%">
 
+### 五年 · 从写代码，到让 AI 指挥 AI　<sub>5:09 中文 · 5:29 English · 竖屏短版 1:23 · 光影渲染 · 1080p</sub>
+
+> 从开发者亲自操作代码，到 Agent 自主组织软件开发：这条路是怎么一步一步走过来的。
+
+只讲截至 2026 年 10 月已经发生的事：Tab 补全、对话改代码、Agent 接管任务、同时开十个、人成了瓶颈，再到协调 Agent 动态组织执行者。多 Agent 编排 2024 年就有了，2026 年变的是执行者终于靠得住了。一份脚本出六个平台版本：B 站、YouTube、抖音、小红书、视频号、YouTube Shorts；第一帧就开口，配乐与音效由 ElevenLabs 生成。
+
+[关于这部片子与制作入口](films/five-years/) · [各平台发布文案](films/five-years/发布文案.md)
+
+<img src="docs/images/five-years-stills.jpg" alt="《五年》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么

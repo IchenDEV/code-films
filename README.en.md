@@ -71,6 +71,16 @@ A bilingual essay film against AI bureaucracy. Spawn workers when the task needs
 
 <img src="docs/images/headcount-stills.jpg" alt="Stills from Headcount" width="100%">
 
+### Five Years · 五年　<sub>5:09 Chinese · 5:29 English · 1:23 vertical cuts · rendered light · 1080p</sub>
+
+> From writing code to AI directing AI: how we got here, one step at a time.
+
+A record, not a prediction, of what had already happened by October 2026: Tab completion, editing by asking, agents taking whole tasks, running ten at once, the human becoming the bottleneck, and coordinator agents that organize other agents on the fly. Orchestrator-workers existed in 2024; what changed in 2026 is that the workers became reliable. One script yields six platform cuts (Bilibili, YouTube, Douyin, Xiaohongshu, WeChat Channels, YouTube Shorts), with a cold open that starts talking on frame one and an ElevenLabs-generated score and sound design.
+
+[About the film and build commands](films/five-years/) · [Publishing copy per platform](films/five-years/发布文案.md)
+
+<img src="docs/images/five-years-stills.jpg" alt="Stills from Five Years" width="100%">
+
 ---
 
 ## What the pipeline does

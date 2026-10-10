@@ -1,0 +1,38 @@
+{
+  "id": "five-years",
+  "title": {
+    "zh": "从写代码，到让 AI 指挥 AI",
+    "en": "From Writing Code to AI Directing AI"
+  },
+  "fps": 30,
+  "narration": {
+    "zh": {
+      "voice": "hFamrilbAE6WDMtWgKvu",
+      "voiceName": "Pangge",
+      "model": "eleven_v4",
+      "languageCode": "zh",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "speed": 1.16
+      }
+    },
+    "en": {
+      "voice": "dSByRdUbTGloB7TFA1qD",
+      "voiceName": "Jon - Catalyst",
+      "model": "eleven_v4",
+      "languageCode": "en",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "speed": 1.1
+      }
+    }
+  },
+  "music": {
+    "model": "music_v2_5"
+  },
+  "loudness": -14
+}
