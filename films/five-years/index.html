@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>五年 · Five Years</title>
+<style>
+  @font-face { font-family: "FY Display"; src: url("fonts/display-zh.ttf"); }
+  @font-face { font-family: "FY Black"; src: url("fonts/black-en.ttf"); }
+  @font-face { font-family: "FY Num"; src: url("fonts/num.ttf"); }
+  @font-face { font-family: "FY Mono"; src: url("fonts/mono.ttf"); font-weight: 100 900; }
+  @font-face { font-family: "FY Inter"; src: url("fonts/ui.ttf"); font-weight: 100 900; }
+  html, body { margin: 0; background: #000; color: #bbb; font: 13px/1.4 system-ui, sans-serif; }
+  canvas { display: block; max-width: 100vw; max-height: 100vh; margin: 0 auto; }
+  #ui { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 12px; align-items: center;
+        padding: 10px 16px; background: linear-gradient(transparent, rgba(0,0,0,.8)); }
+  #ui input { flex: 1; }
+  #ui button { background: #222; color: #ddd; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui" hidden>
+  <button id="play">播放 / 暂停</button>
+  <input id="t" type="range" min="0" step="0.01" value="0">
+  <span id="lab">0.00s</span>
+  <audio id="aud" preload="auto"></audio>
+</div>
+<script>
+  // ?v=<成片版本>：bilibili / youtube / douyin / xiaohongshu / channels / shorts
+  const VARIANT = new URLSearchParams(location.search).get('v') || 'bilibili';
+  document.write(`<script src="timeline/${VARIANT}.js"><\/script>`);
+</script>
+<script src="web/engine.js"></script>
+<script src="web/shots/a.js"></script>
+<script src="web/shots/b.js"></script>
+<script src="web/shots/c.js"></script>
+<script src="web/shots/d.js"></script>
+<script src="web/main.js"></script>
+</body>
+</html>
