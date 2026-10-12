@@ -81,6 +81,16 @@ A record, not a prediction, of what had already happened by October 2026: Tab co
 
 <img src="docs/images/five-years-stills.jpg" alt="Stills from Five Years" width="100%">
 
+### That's It? · 就这？　<sub>2:21 wordless cut · 1:16 narrated short cut · Chinese + English subtitles · night-city picture book · 1080p</sub>
+
+> Same AI. One says "That's it?", one says "Everything changes." Neither is wrong. They're standing in different places.
+
+Adapted from Andrej Karpathy's post of October 11, 2026: the gap in shared understanding of LLM capability is widening into a sharp funnel. The long cut has no voice-over; picture and subtitles tell the story and the score carries the emotion. The anchor phrase "That's it?" starts as disappointment (the restaurant the AI recommended closed three years ago) and ends as "This is where it starts." Problem size, a jagged mountain range of abilities, and a door decide where you stand. A narrated short cut is built for reach: a hook on frame one and a comment poll at the end. Seven versions: Douyin, WeChat Channels, Bilibili, YouTube and Shorts.
+
+▶ **Watch**: [Douyin short (Chinese narration)](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-douyin-short-zh.mp4) · [Shorts (English)](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-shorts-en.mp4) · [Bilibili long cut](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-bilibili.mp4) · [All downloads](https://github.com/IchenDEV/code-films/releases/tag/thats-it-v1.0)　|　[About the film and build commands](films/thats-it/) · [Publishing copy per platform](films/thats-it/发布文案.md)
+
+<img src="docs/images/thats-it-stills.jpg" alt="Stills from That's It?" width="100%">
+
 ---
 
 ## What the pipeline does

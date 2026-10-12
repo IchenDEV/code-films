@@ -1,0 +1,708 @@
+{
+ "variant": "shorts",
+ "cut": "short",
+ "poll": true,
+ "vo": [
+  {
+   "id": "hook",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 0.017,
+   "dur": 7.403,
+   "t": 0.1
+  },
+  {
+   "id": "storm",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 7.671,
+   "dur": 8.2,
+   "t": 8.028
+  },
+  {
+   "id": "question",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 16.141,
+   "dur": 4.67,
+   "t": 16.678
+  },
+  {
+   "id": "funnel",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 20.933,
+   "dur": 14.291,
+   "t": 21.798
+  },
+  {
+   "id": "why",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 35.498,
+   "dur": 11.849,
+   "t": 36.539
+  },
+  {
+   "id": "door",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 47.566,
+   "dur": 4.882,
+   "t": 48.838
+  },
+  {
+   "id": "climax",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 52.525,
+   "dur": 7.581,
+   "t": 54.17
+  },
+  {
+   "id": "ending",
+   "file": "out/vo/en/take-a6f9076a65.mp3",
+   "trim": 60.267,
+   "dur": 12.293,
+   "t": 63.034
+  }
+ ],
+ "fmt": "v",
+ "lang": "en",
+ "safe67": false,
+ "fps": 30,
+ "bpm": 72,
+ "beat": 0.8333333333333334,
+ "duration": 79.844,
+ "shots": [
+  {
+   "kind": "phone",
+   "a": 0,
+   "b": 2.683,
+   "lines": [
+    "L01"
+   ],
+   "cues": {
+    "L01": 0,
+    "L01_end": 2.683
+   }
+  },
+  {
+   "kind": "shop",
+   "a": 2.683,
+   "b": 5.803,
+   "lines": [
+    "L02"
+   ],
+   "cues": {
+    "L02": 2.683,
+    "L02_end": 5.803
+   }
+  },
+  {
+   "kind": "shrug",
+   "a": 5.803,
+   "b": 7.928,
+   "lines": [
+    "L03"
+   ],
+   "cues": {
+    "L03": 5.803,
+    "L03_end": 7.928
+   }
+  },
+  {
+   "kind": "desk",
+   "a": 7.928,
+   "b": 16.578,
+   "lines": [
+    "L05",
+    "L06"
+   ],
+   "cues": {
+    "L05": 7.928,
+    "L05_end": 12.237,
+    "L06": 12.237,
+    "L06_end": 16.578
+   }
+  },
+  {
+   "kind": "split",
+   "a": 16.578,
+   "b": 21.698,
+   "lines": [
+    "L07",
+    "L08"
+   ],
+   "cues": {
+    "L07": 16.578,
+    "L07_end": 18.577,
+    "L08": 18.577,
+    "L08_end": 21.698
+   }
+  },
+  {
+   "kind": "funnel",
+   "a": 21.698,
+   "b": 36.439,
+   "lines": [
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13"
+   ],
+   "cues": {
+    "L09": 21.698,
+    "L09_end": 24.585,
+    "L10": 24.585,
+    "L10_end": 26.665,
+    "L11": 26.665,
+    "L11_end": 29.225,
+    "L12": 29.225,
+    "L12_end": 32.705,
+    "L13": 32.705,
+    "L13_end": 36.439
+   }
+  },
+  {
+   "kind": "sea",
+   "a": 36.439,
+   "b": 41.841,
+   "lines": [
+    "L14",
+    "L15"
+   ],
+   "cues": {
+    "L14": 36.439,
+    "L14_end": 39.001,
+    "L15": 39.001,
+    "L15_end": 41.841
+   }
+  },
+  {
+   "kind": "peaks",
+   "a": 41.841,
+   "b": 45.961,
+   "lines": [
+    "L17"
+   ],
+   "cues": {
+    "L17": 41.841,
+    "L17_end": 45.961
+   }
+  },
+  {
+   "kind": "valley",
+   "a": 45.961,
+   "b": 48.738,
+   "lines": [
+    "L19"
+   ],
+   "cues": {
+    "L19": 45.961,
+    "L19_end": 48.738
+   }
+  },
+  {
+   "kind": "door",
+   "a": 48.738,
+   "b": 54.07,
+   "lines": [
+    "L20",
+    "L21"
+   ],
+   "cues": {
+    "L20": 48.738,
+    "L20_end": 51.672,
+    "L21": 51.672,
+    "L21_end": 54.07
+   }
+  },
+  {
+   "kind": "swarm",
+   "a": 54.07,
+   "b": 58.325,
+   "lines": [
+    "L22"
+   ],
+   "cues": {
+    "L22": 54.07,
+    "L22_end": 58.325
+   }
+  },
+  {
+   "kind": "vertigo",
+   "a": 58.325,
+   "b": 62.934,
+   "lines": [
+    "L23"
+   ],
+   "cues": {
+    "L23": 58.325,
+    "L23_end": 62.101
+   }
+  },
+  {
+   "kind": "napkin",
+   "a": 62.934,
+   "b": 65.607,
+   "lines": [
+    "L24"
+   ],
+   "cues": {
+    "L24": 62.934,
+    "L24_end": 65.607
+   }
+  },
+  {
+   "kind": "return",
+   "a": 65.607,
+   "b": 71.607,
+   "lines": [
+    "L28",
+    "L29"
+   ],
+   "cues": {
+    "L28": 65.607,
+    "L28_end": 68.487,
+    "L29": 68.487,
+    "L29_end": 71.607
+   }
+  },
+  {
+   "kind": "dawn",
+   "a": 71.607,
+   "b": 75.677,
+   "lines": [
+    "L30"
+   ],
+   "cues": {
+    "L30": 71.607,
+    "L30_end": 75.677
+   }
+  },
+  {
+   "kind": "endcard",
+   "a": 75.677,
+   "b": 79.844,
+   "lines": [
+    "END"
+   ],
+   "cues": {
+    "END": 75.677,
+    "END_end": 79.844
+   }
+  }
+ ],
+ "caps": [
+  {
+   "id": "L01",
+   "a": 0,
+   "b": 2.563,
+   "zh": "你是不是也觉得——AI 有点傻？",
+   "en": "Do you think AI is kind of dumb?"
+  },
+  {
+   "id": "L02",
+   "a": 2.583,
+   "b": 5.683,
+   "zh": "它推荐的馆子，三年前就关门了。",
+   "en": "The restaurant it recommended closed three years ago."
+  },
+  {
+   "id": "L03",
+   "a": 5.703,
+   "b": 7.808,
+   "zh": "你心想：就这？",
+   "en": "You thought: That's it?"
+  },
+  {
+   "id": "L05",
+   "a": 7.828,
+   "b": 12.117,
+   "zh": "可隔壁有人，用它一下午做完一个月的活。",
+   "en": "But next door, someone used it to do a month of work in one afternoon."
+  },
+  {
+   "id": "L06",
+   "a": 12.137,
+   "b": 16.458,
+   "zh": "他后背发凉：要变天了。",
+   "en": "A chill down his back: everything is about to change."
+  },
+  {
+   "id": "L07",
+   "a": 16.478,
+   "b": 18.457,
+   "zh": "你们俩，谁看错了？",
+   "en": "So which of you is wrong?"
+  },
+  {
+   "id": "L08",
+   "a": 18.477,
+   "b": 21.578,
+   "zh": "都没有。只是站的地方不一样。",
+   "en": "Neither. You're standing in different places."
+  },
+  {
+   "id": "L09",
+   "a": 21.598,
+   "b": 24.465,
+   "zh": "把八十亿人排成一个漏斗——",
+   "en": "Line up eight billion people as a funnel—"
+  },
+  {
+   "id": "L10",
+   "a": 24.485,
+   "b": 26.545,
+   "zh": "六十亿人，基本没碰过它；",
+   "en": "six billion have barely touched it;"
+  },
+  {
+   "id": "L11",
+   "a": 26.565,
+   "b": 29.105,
+   "zh": "十到二十亿人，就见过一个聊天框；",
+   "en": "one to two billion only know the chatbot;"
+  },
+  {
+   "id": "L12",
+   "a": 29.125,
+   "b": 32.585,
+   "zh": "两千万人，看它一句话做完几个月的活；",
+   "en": "twenty million watch it do months of work from one sentence;"
+  },
+  {
+   "id": "L13",
+   "a": 32.605,
+   "b": 36.319,
+   "zh": "最底下只有五千人。他们看见了什么？",
+   "en": "and at the bottom, five thousand. What do they see?"
+  },
+  {
+   "id": "L14",
+   "a": 36.339,
+   "b": 38.881,
+   "zh": "一杯水，量不出海有多深；",
+   "en": "A cup of water can't measure the sea;"
+  },
+  {
+   "id": "L15",
+   "a": 38.901,
+   "b": 41.721,
+   "zh": "问题越大，它就越深。",
+   "en": "the bigger your problem, the deeper it goes."
+  },
+  {
+   "id": "L17",
+   "a": 41.741,
+   "b": 45.841,
+   "zh": "能对答案的地方——算式、代码——它高得惊人；",
+   "en": "Wherever answers can be checked—math, code—it towers;"
+  },
+  {
+   "id": "L19",
+   "a": 45.861,
+   "b": 48.618,
+   "zh": "找馆子、过日子，还在山谷里。",
+   "en": "finding dinner is still down in the valley."
+  },
+  {
+   "id": "L20",
+   "a": 48.638,
+   "b": 51.552,
+   "zh": "门外的人，只看过预告片。",
+   "en": "Those outside have only seen the trailer."
+  },
+  {
+   "id": "L21",
+   "a": 51.572,
+   "b": 53.95,
+   "zh": "门里那五千人看见的是——",
+   "en": "Inside, the five thousand see—"
+  },
+  {
+   "id": "L22",
+   "a": 53.97,
+   "b": 58.205,
+   "zh": "成千上万个 AI，几周做完高手几年的活；",
+   "en": "thousands of AIs doing in weeks what experts need years for;"
+  },
+  {
+   "id": "L23",
+   "a": 58.225,
+   "b": 61.981,
+   "zh": "曲线立了起来——快到人都看不懂。",
+   "en": "the curve goes vertical—too fast for people to follow."
+  },
+  {
+   "id": "L24",
+   "a": 62.834,
+   "b": 65.487,
+   "zh": "这是 Karpathy 画的漏斗。",
+   "en": "This is Andrej Karpathy's funnel."
+  },
+  {
+   "id": "L28",
+   "a": 65.507,
+   "b": 68.367,
+   "zh": "所以，说“就这？”的人没有错——",
+   "en": "So whoever says \"That's it?\" isn't wrong—"
+  },
+  {
+   "id": "L29",
+   "a": 68.387,
+   "b": 71.487,
+   "zh": "只是还没问它，真正在乎的问题。",
+   "en": "they just haven't asked the question they truly care about."
+  },
+  {
+   "id": "L30",
+   "a": 71.507,
+   "b": 75.557,
+   "zh": "就这？——不，就从这儿开始。",
+   "en": "That's it? No. This is where it starts."
+  }
+ ],
+ "acts": [
+  {
+   "name": "hook",
+   "a": 0,
+   "b": 7.928
+  },
+  {
+   "name": "storm",
+   "a": 7.928,
+   "b": 16.578
+  },
+  {
+   "name": "question",
+   "a": 16.578,
+   "b": 21.698
+  },
+  {
+   "name": "funnel",
+   "a": 21.698,
+   "b": 36.439
+  },
+  {
+   "name": "why",
+   "a": 36.439,
+   "b": 48.738
+  },
+  {
+   "name": "door",
+   "a": 48.738,
+   "b": 54.07
+  },
+  {
+   "name": "climax",
+   "a": 54.07,
+   "b": 62.934
+  },
+  {
+   "name": "ending",
+   "a": 62.934,
+   "b": 75.677
+  },
+  {
+   "name": "end",
+   "a": 75.677,
+   "b": 79.844
+  }
+ ],
+ "cta": [
+  "Where are you?",
+  "Comment your number"
+ ],
+ "txt": {
+  "title": "就这？",
+  "titleEn": "THAT'S IT?",
+  "titleSub": "为什么每个人眼里的 AI，不一样大",
+  "titleSubEn": "Why AI looks so different depending on where you stand",
+  "header": [
+   "全球只有约 5000 人，用过最前沿的 AI",
+   "你站在第几层？"
+  ],
+  "headerEn": [
+   "Only ~5,000 people have used the most advanced AI",
+   "Where do you stand?"
+  ],
+  "poll": [
+   [
+    "1",
+    "几乎没用过"
+   ],
+   [
+    "2",
+    "偶尔聊聊天"
+   ],
+   [
+    "3",
+    "天天拿它干活"
+   ],
+   [
+    "4",
+    "我在门里面"
+   ]
+  ],
+  "pollEn": [
+   [
+    "1",
+    "barely used it"
+   ],
+   [
+    "2",
+    "the odd chat"
+   ],
+   [
+    "3",
+    "it does my work"
+   ],
+   [
+    "4",
+    "I'm inside the door"
+   ]
+  ],
+  "ask1": "附近有什么好吃的馆子？",
+  "ask1En": "Any good places to eat nearby?",
+  "answer1": "强烈推荐「老街小馆」！招牌红烧肉，口碑极佳。",
+  "answer1En": "Try \"Old Street Kitchen\"! Famous braised pork, rave reviews.",
+  "shopName": "老街小馆",
+  "closed": "停业",
+  "closedNote": "本店已于三年前停止营业 · 感谢多年厚爱",
+  "justThis": "就这？",
+  "bigChange": "要变天了",
+  "calendar": [
+   "一",
+   "个",
+   "月"
+  ],
+  "tiers": [
+   {
+    "n": "60 亿",
+    "pct": "约 75%",
+    "what": "几乎没碰过",
+    "en": "6 BILLION · BARELY TOUCHED IT"
+   },
+   {
+    "n": "10–20 亿",
+    "pct": "约 20%",
+    "what": "一个呆呆的聊天框",
+    "en": "1–2 BILLION · A DOPEY CHATBOT"
+   },
+   {
+    "n": "2000 万",
+    "pct": "约 0.2%",
+    "what": "写代码、做数学的专业用户",
+    "en": "20 MILLION · PROS IN MATH & CODE"
+   },
+   {
+    "n": "≈ 5000",
+    "pct": "约 0.00006%",
+    "what": "实验室内部",
+    "en": "≈ 5,000 · INSIDE THE LABS"
+   }
+  ],
+  "eightB": "80 亿人",
+  "eightBEn": "8 BILLION PEOPLE",
+  "cup": "一杯水",
+  "deep": "你真在乎的问题",
+  "peakA": "算式",
+  "peakB": "代码",
+  "peakC": "证明",
+  "valleyA": "找馆子",
+  "valleyB": "过日子",
+  "valleyC": "写封信",
+  "doors": [
+   "免费",
+   "付费",
+   "内部"
+  ],
+  "trailer": "预告片",
+  "bars": [
+   [
+    "顶尖高手",
+    "几年"
+   ],
+   [
+    "成千上万个 AI",
+    "几周"
+   ]
+  ],
+  "manuscripts": [
+   "证明",
+   "定理",
+   "新材料",
+   "新药",
+   "漏洞",
+   "补丁"
+  ],
+  "karpathy": "Andrej Karpathy",
+  "karpathyRole": "OpenAI 创始成员之一 · 前特斯拉 AI 总监",
+  "karpathyRoleEn": "OpenAI founding member · former Director of AI, Tesla",
+  "napkin": "粗算 · napkin math",
+  "oneYear": "不到一年前",
+  "postDate": "2026.10.11 · X",
+  "codeQuote": [
+   "“less than 1 year ago, I was writing code manually by hand,",
+   "typing memorized computer code commands into a code editor",
+   "character by character, occasionally pressing Tab…”"
+  ],
+  "codeQuoteSrc": "— Andrej Karpathy · X · 2026.10.11",
+  "roleSrc": "据 karpathy.ai",
+  "roleSrcEn": "per karpathy.ai",
+  "postAprDate": "重提 2026.04.09 的旧帖",
+  "quote": "this gap in shared understanding",
+  "quote2": "of LLM capability is *widening*.",
+  "dream": "我的小馆子",
+  "dreamReply": "好呀！我们一步一步来：先把菜单和成本算清楚。",
+  "code": "for i in range(len(rows)):",
+  "dreamAsk": "我想开一家自己的小馆子，该从哪儿开始？",
+  "dreamLines": [
+   "菜单 · 成本 · 选址",
+   "房租多少？",
+   "先卖什么？"
+  ],
+  "start": "就从这儿开始",
+  "startEn": "This is where it starts",
+  "source": "根据 Andrej Karpathy 2026 年 10 月 11 日的帖子",
+  "sourceEn": "Based on Andrej Karpathy's post, October 11, 2026",
+  "sign": "IDEVLAB",
+  "justThisEn": "That's it?",
+  "bigChangeEn": "Everything's changing",
+  "calendarEn": [
+   "ONE",
+   " ",
+   "MONTH"
+  ],
+  "cupEn": "a cup of water",
+  "deepEn": "a problem you truly care about",
+  "peakAEn": "MATH",
+  "peakBEn": "CODE",
+  "peakCEn": "PROOFS",
+  "valleyAEn": "dinner?",
+  "valleyBEn": "errands",
+  "valleyCEn": "a letter",
+  "doorsEn": [
+   "FREE",
+   "PAID",
+   "INTERNAL"
+  ],
+  "trailerEn": "TRAILER",
+  "barsEn": [
+   [
+    "Top experts",
+    "years"
+   ],
+   [
+    "Thousands of AIs",
+    "weeks"
+   ]
+  ],
+  "oneYearEn": "Less than a year ago",
+  "dreamEn": "My little place",
+  "dreamLinesEn": [
+   "menu · costs · rent",
+   "how much rent?",
+   "what to cook first?"
+  ],
+  "dreamAskEn": "I want to open my own little restaurant. Where do I start?",
+  "dreamReplyEn": "Love it! Step by step: let's work out the menu and costs first."
+ },
+ "snapped": false
+}

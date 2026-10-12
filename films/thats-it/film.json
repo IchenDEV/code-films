@@ -1,0 +1,12 @@
+{
+  "id": "thats-it",
+  "title": {
+    "zh": "就这？",
+    "en": "That's It?"
+  },
+  "fps": 30,
+  "music": {
+    "model": "music_v2_5"
+  },
+  "loudness": -14
+}

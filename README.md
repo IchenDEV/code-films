@@ -83,6 +83,16 @@
 
 <img src="docs/images/five-years-stills.jpg" alt="《五年》剧照" width="100%">
 
+### 就这？· That's It?　<sub>长版 2:21 无口播 · 短版 1:16 有旁白 · 中英双语字幕 · 夜城绘本 · 1080p</sub>
+
+> 同一个 AI，有人说「就这？」，有人说「要变天了」。谁都没看错——只是站的地方不一样。
+
+根据 Andrej Karpathy 2026 年 10 月 11 日的帖子改编：人们对大模型能力的理解差距正在变宽，像一个尖尖的漏斗。长版没有旁白，画面和字幕讲完故事，情绪跟着配乐走。锚词「就这？」从开头的失望（AI 推荐的馆子三年前就关了），变成结尾的「就从这儿开始」。问题的大小、本事的山脉、一道门：三件事决定你站在哪一层。另有为流量做的有旁白短版：第一帧就是钩子，片尾在评论区站队。抖音、视频号、B 站、YouTube、Shorts 共七个版本。
+
+▶ **观看**：[抖音短版（中文旁白）](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-douyin-short-zh.mp4) · [Shorts 短版（English）](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-shorts-en.mp4) · [B 站长版](https://github.com/IchenDEV/code-films/releases/download/thats-it-v1.0/thats-it-bilibili.mp4) · [全部下载](https://github.com/IchenDEV/code-films/releases/tag/thats-it-v1.0)　|　[关于这部片子与制作入口](films/thats-it/) · [各平台发布文案](films/thats-it/发布文案.md)
+
+<img src="docs/images/thats-it-stills.jpg" alt="《就这？》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么

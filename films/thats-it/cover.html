@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>就这？· 封面</title>
+<style>
+  @font-face { font-family: "TI Hand"; src: url("fonts/hand.ttf"); }
+  @font-face { font-family: "TI Serif"; src: url("fonts/serif-zh.ttf"); font-weight: 200 900; }
+  @font-face { font-family: "TI Lora"; src: url("fonts/lora.ttf"); font-weight: 400 700; }
+  @font-face { font-family: "TI Lora Italic"; src: url("fonts/lora-italic.ttf"); font-weight: 400 700; }
+  html, body { margin: 0; background: #000; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+  // ?lang=zh|en&size=1080x1920
+  const P = new URLSearchParams(location.search);
+  window.TL = { lang: P.get('lang') || 'zh', fmt: 'c', shots: [], caps: [], txt: {} };
+</script>
+<script src="web/engine.js"></script>
+<script src="web/shots/a.js"></script>
+<script src="web/cover.js"></script>
+</body>
+</html>
