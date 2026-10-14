@@ -85,6 +85,18 @@
 
 ---
 
+### Anthropic 把 Git 换掉了 · Anthropic Replaced Git　<sub>竖屏短版 1:29 中文 · 1:32 English · 横屏长版 4:21 中文 · 5:04 English · 扁平动态图形 · 1080p</sub>
+
+> 写代码已经不是瓶颈了。下一个被 AI 挤爆的，会是什么？
+
+根据 Anthropic 工程博客《Redesigning source control at Anthropic》（2026-10-13）：每天合并量从 2500 次涨到 3 万次，Git 成了最大的瓶颈；7 个人用 5 个月造了自研版本控制 Scion。一套画面出五个成片（抖音、视频号、TikTok / Reels / Shorts、B 站、YouTube）：第一帧就是冲突，每句一个画面动作，逐字高亮字幕，关键词念到时数字砸下来、配一个音效；竖屏短版讲故事，横屏长版讲全细节。
+
+[关于这部片子与制作命令](films/scion/) · [各平台发布文案](films/scion/发布文案.md) · [出处](films/scion/CREDITS.md)
+
+<img src="docs/images/scion-stills.jpg" alt="《Anthropic 把 Git 换掉了》截帧" width="100%">
+
+---
+
 ## 这套工作流能做什么
 
 | | |

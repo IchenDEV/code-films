@@ -83,6 +83,18 @@ A record, not a prediction, of what had already happened by October 2026: Tab co
 
 ---
 
+### Anthropic Replaced Git · Anthropic 把 Git 换掉了　<sub>1:29 Chinese · 1:32 English vertical · 4:21 Chinese · 5:04 English long cuts · flat motion graphics · 1080p</sub>
+
+> Writing code isn't the bottleneck anymore. So what breaks next?
+
+Based on Anthropic's engineering post "Redesigning source control at Anthropic" (Oct 13, 2026): daily merges went from 2,500 to over 30,000, Git became the biggest bottleneck, and a team of seven built their own version control system, Scion, in five months. One picture source yields five platform cuts (Douyin, WeChat Channels, TikTok / Reels / Shorts, Bilibili, YouTube): conflict on frame one, a picture beat on every line, word-by-word captions, and numbers that slam in with a sound on the spoken keyword. The vertical cuts tell the story; the long cuts cover every detail.
+
+[About the film and build commands](films/scion/) · [Publishing copy per platform](films/scion/发布文案.md) · [Sources](films/scion/CREDITS.md)
+
+<img src="docs/images/scion-stills.jpg" alt="Stills from Anthropic Replaced Git" width="100%">
+
+---
+
 ## What the pipeline does
 
 | | |

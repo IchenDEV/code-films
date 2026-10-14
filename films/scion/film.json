@@ -1,0 +1,12 @@
+{
+  "id": "scion",
+  "title": {
+    "zh": "Anthropic 把 Git 换掉了",
+    "en": "Anthropic Replaced Git"
+  },
+  "fps": 30,
+  "music": {
+    "model": "music_v2_5"
+  },
+  "loudness": -14
+}
