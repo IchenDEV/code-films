@@ -81,6 +81,16 @@ A record, not a prediction, of what had already happened by October 2026: Tab co
 
 <img src="docs/images/five-years-stills.jpg" alt="Stills from Five Years" width="100%">
 
+### Who Reviews the Code Now? · Anthropic 不再逐行审代码了　<sub>1:49 Chinese · 2:04 English vertical · 4:56 Chinese · 5:53 English long cuts · flat motion graphics · 1080p</sub>
+
+> AI writes 90% of the code. Who reviews it?
+
+Based on claude.dev's blog post "How the Claude Code team does code review" (Oct 15, 2026): Claude writes about 90 percent of Claude Code's own code. From June to September, merged PRs more than doubled while reverts fell by more than 40 percent. They didn't remove review; they moved most of the reading to machines, using six layers of automated checks over a rollback safety net, reserving human attention for decisions machines are bad at. One picture source yields five platform cuts (Douyin, WeChat Channels, TikTok / Reels / Shorts, Bilibili, YouTube): conflict on frame one, word-by-word captions, and animated glass filters showing the six inspection layers in action. The vertical cuts tell the story; the long cuts cover every detail.
+
+[About the film and build commands](films/code-review/) · [Publishing copy per platform](films/code-review/发布文案.md) · [Sources](films/code-review/CREDITS.md)
+
+<img src="docs/images/code-review-stills.jpg" alt="Stills from Who Reviews the Code Now?" width="100%">
+
 ---
 
 ## What the pipeline does
