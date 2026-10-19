@@ -83,6 +83,16 @@
 
 <img src="docs/images/five-years-stills.jpg" alt="《五年》剧照" width="100%">
 
+### Anthropic 不再逐行审代码了 · Who Reviews the Code Now?　<sub>竖屏短版 1:49 中文 · 2:04 English · 横屏长版 4:56 中文 · 5:53 English · 扁平动态图形 · 1080p</sub>
+
+> AI 写 90% 的代码，谁来审？
+
+根据 claude.dev 博客《How the Claude Code team does code review》（2026-10-15）制作：Claude Code 约九成的代码是 Claude 写的；六月到九月，合并的 PR 翻了一倍多，要回滚的比例反而降了四成多。他们没有取消审查，而是把大部分“读代码”交给机器，用六层检查加一张回滚的网，把人的时间留给机器不擅长的决定。一套画面出五个成片（抖音、视频号、TikTok / Reels / Shorts、B 站、YouTube）：第一帧抛出反常数字，逐字高亮字幕，六层筛子直观呈现自动化审查；竖屏短版聚焦故事，横屏长版讲全细节。
+
+[关于这部片子与制作命令](films/code-review/) · [各平台发布文案](films/code-review/发布文案.md) · [出处](films/code-review/CREDITS.md)
+
+<img src="docs/images/code-review-stills.jpg" alt="《Anthropic 不再逐行审代码了》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么
@@ -282,6 +292,8 @@ films/mcp/           《MCP 跑偏了》· HyperFrames · E/F 两种旁白
 films/letting-go/    《放手》· 水墨 · 中英双语
 films/nobody-told-them/ 《初生牛犊》· 孔版印刷 · 中英双语
 films/headcount/     《编制》· 纸艺拼贴 · 中英双语
+films/five-years/    《五年》· 光影渲染 · 中英多版本
+films/code-review/   《Anthropic 不再逐行审代码了》· 扁平动态图形 · 中英双语
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>

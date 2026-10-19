@@ -1,0 +1,12 @@
+{
+  "id": "code-review",
+  "title": {
+    "zh": "Anthropic 不再逐行审代码了",
+    "en": "Who Reviews the Code Now?"
+  },
+  "fps": 30,
+  "music": {
+    "model": "music_v2_5"
+  },
+  "loudness": -14
+}
