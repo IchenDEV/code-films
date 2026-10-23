@@ -1,0 +1,17 @@
+{
+  "name": "temple-dusk",
+  "version": "1.0.0",
+  "description": "A procedural dusk temple in three.js, rendered to a 70-second film. No models, textures or photos.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "node tools/serve.mjs 8130",
+    "still": "node tools/still.mjs",
+    "check": "node tools/check.mjs",
+    "render": "node tools/render.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.63.0",
+    "three": "0.186.1"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+out/
+previews/
+.local/
+*.exit
+*.log
+render-cloud/*.tar.gz
+render-cloud/*.mp4

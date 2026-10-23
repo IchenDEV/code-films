@@ -1,0 +1,8 @@
+[
+ {"file":"previews/precinct/final-tower.png","t":20,"cam":{"position":[28,3.2,22],"target":[39,4.2,16],"fov":45}},
+ {"file":"previews/precinct/final-burner.png","t":10,"cam":{"position":[3,1.5,0.6],"target":[0,1.5,-3.2],"fov":40}},
+ {"file":"previews/precinct/final-basin.png","t":20,"cam":{"position":[-6.4,1.3,10],"target":[-9,0.6,7.5],"fov":40}},
+ {"file":"previews/precinct/final-pagodas.png","t":20,"cam":{"position":[-37,1.8,-4],"target":[-44.5,1,-10.5],"fov":45}},
+ {"file":"previews/precinct/final-shot2-end.png","shot":2,"at":1},
+ {"file":"previews/precinct/final-shot1-end.png","shot":1,"at":1}
+]

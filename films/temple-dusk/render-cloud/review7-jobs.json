@@ -1,0 +1,7 @@
+[
+ {"file":"previews/review7/lawn.png","t":40,"cam":{"position":[-12,1.6,44],"target":[-34,2,20],"fov":50}},
+ {"file":"previews/review7/aerial.png","t":63,"cam":{"position":[60,70,95],"target":[0,0,8],"fov":45}},
+ {"file":"previews/review7/maple-ground.png","t":40,"cam":{"position":[24,1.4,22],"target":[18,0.6,31],"fov":50}},
+ {"file":"previews/review7/pine-close.png","t":40,"cam":{"position":[-9.5,2.4,40],"target":[-7,3.5,46],"fov":50}},
+ {"file":"previews/review7/approach.png","t":10,"cam":{"position":[0.8,2.1,96],"target":[0,5.4,62],"fov":38}}
+]
