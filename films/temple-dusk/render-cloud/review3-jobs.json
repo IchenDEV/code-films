@@ -1,0 +1,7 @@
+[
+ {"file":"previews/review3/garden-se.png","t":40,"cam":{"position":[14,2.2,30],"target":[36,3,52],"fov":45}},
+ {"file":"previews/review3/lawn.png","t":40,"cam":{"position":[-12,1.6,44],"target":[-34,2,20],"fov":50}},
+ {"file":"previews/review3/bamboo-nw.png","t":40,"cam":{"position":[-22,3,-20],"target":[-40,5,-33],"fov":50}},
+ {"file":"previews/review3/shot10-start.png","shot":10,"at":0},
+ {"file":"previews/review3/shot1-end.png","shot":1,"at":1}
+]

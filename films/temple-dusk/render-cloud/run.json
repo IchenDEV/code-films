@@ -1,0 +1,12 @@
+{
+  "machine": "temple-render-27b11492",
+  "remoteDirectory": "/data/workspace/temple-dusk",
+  "sourceArchive": "scene.tar.gz",
+  "sourceSha256": "bba634245e5cd2788efe7f995852445958252172c4a9b8ef5a3f2564e1b09806",
+  "renderCommand": "node tools/render.mjs --shots 1-1 --w 1920 --h 1080 --fps 30 --tag cloud-trial",
+  "log": "render.log",
+  "exitCodeFile": "render.exit",
+  "output": "out/cloud-trial/shots/shot-01.mp4",
+  "timeout": "3 hours from creation, then pause",
+  "status": "started; first frame batch pending; modeling on hold"
+}

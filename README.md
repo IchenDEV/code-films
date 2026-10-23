@@ -93,6 +93,16 @@
 
 <img src="docs/images/code-review-stills.jpg" alt="《Anthropic 不再逐行审代码了》剧照" width="100%">
 
+### 黄昏寺庙 · Temple at Dusk　<sub>70 秒 · 1080p 30fps · Three.js 纯代码程序化建模与渲染</sub>
+
+> 零外部 3D 模型、零位图贴图、零照片。纯代码程序化构建的黄昏寺庙。
+
+10 个精心编排的 7 秒镜头，以“微观特写起幅，连续加速拉远揭示大景”的统一运镜语言，穿梭于秋日黄昏群山中的传统寺庙建筑群。所有场景几何体（大殿斗栱、七架梁、五重塔、九环相轮、拟宝珠木桥、石灯笼、悬鱼、莲池、游弋锦鲤、红枫与山林）及材质均由 JavaScript 代码纯程序化生成。
+
+▶ **观看**：[1080p 成片](https://github.com/IchenDEV/code-films/releases/download/temple-dusk-v1.0/temple-dusk.mp4) · [720p 预览](https://github.com/IchenDEV/code-films/releases/download/temple-dusk-v1.0/temple-dusk-preview-720p.mp4)　|　[关于这部片子与运行命令](films/temple-dusk/)
+
+<img src="docs/images/temple-dusk-stills.jpg" alt="《黄昏寺庙》剧照" width="100%">
+
 ---
 
 ## 这套工作流能做什么
@@ -294,6 +304,7 @@ films/nobody-told-them/ 《初生牛犊》· 孔版印刷 · 中英双语
 films/headcount/     《编制》· 纸艺拼贴 · 中英双语
 films/five-years/    《五年》· 光影渲染 · 中英多版本
 films/code-review/   《Anthropic 不再逐行审代码了》· 扁平动态图形 · 中英双语
+films/temple-dusk/   《黄昏寺庙》· Three.js 纯代码程序化建模与渲染
 films/_template/     新片模板
 docs/WORKFLOW.md     工作流与踩过的坑
 run.sh               ./run.sh <片名> <步骤>

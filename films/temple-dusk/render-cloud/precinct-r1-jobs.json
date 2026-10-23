@@ -1,0 +1,13 @@
+[
+ {"file":"previews/precinct/tower-wide.png","t":20,"cam":{"position":[30,4,26],"target":[39,4,16],"fov":45}},
+ {"file":"previews/precinct/tower-close.png","t":20,"cam":{"position":[35,2.4,22.5],"target":[39,4.2,16],"fov":42}},
+ {"file":"previews/precinct/tower-roof.png","t":20,"cam":{"position":[31,6.5,24],"target":[39,7,16],"fov":42}},
+ {"file":"previews/precinct/burner.png","t":20,"cam":{"position":[3,1.5,0.6],"target":[0,1.2,-3.2],"fov":40}},
+ {"file":"previews/precinct/basin.png","t":20,"cam":{"position":[-6.4,1.3,10],"target":[-9,0.6,7.5],"fov":40}},
+ {"file":"previews/precinct/pagodas.png","t":20,"cam":{"position":[-37,1.8,-4],"target":[-44.5,1,-10.5],"fov":45}},
+ {"file":"previews/precinct/pagoda-close.png","t":20,"cam":{"position":[-41.8,1.3,-12],"target":[-43.7,1,-9.2],"fov":40}},
+ {"file":"previews/precinct/fence-in.png","t":20,"cam":{"position":[0.5,1.6,32],"target":[0,1.0,56],"fov":40}},
+ {"file":"previews/precinct/fence-out.png","t":20,"cam":{"position":[0.5,1.7,100],"target":[0,0.8,70],"fov":40}},
+ {"file":"previews/precinct/shot2-end.png","shot":2,"at":1},
+ {"file":"previews/precinct/shot1-end.png","shot":1,"at":1}
+]

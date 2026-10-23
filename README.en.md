@@ -91,6 +91,16 @@ Based on claude.dev's blog post "How the Claude Code team does code review" (Oct
 
 <img src="docs/images/code-review-stills.jpg" alt="Stills from Who Reviews the Code Now?" width="100%">
 
+### Temple at Dusk · 黄昏寺庙　<sub>70s · 1080p 30fps · Three.js procedural 3D & cinematography</sub>
+
+> Zero external 3D models, zero image textures, zero photos. A dusk temple compound generated entirely from code.
+
+Ten 7-second shots moving from intimate close-ups (paper lantern, stone lantern, lotus, koi, bridge finial, hanging bronze lantern, Buddha's face, wind chime, pagoda finial rings, backlit maple leaf) with an asymmetric pull curve that eases out into wide architectural and aerial compositions against the autumn sunset. Every geometry, procedural shader, and camera trajectory is synthesized via Three.js.
+
+▶ **Watch**: [1080p Master](https://github.com/IchenDEV/code-films/releases/download/temple-dusk-v1.0/temple-dusk.mp4) · [720p Preview](https://github.com/IchenDEV/code-films/releases/download/temple-dusk-v1.0/temple-dusk-preview-720p.mp4)　|　[About the film](films/temple-dusk/)
+
+<img src="docs/images/temple-dusk-stills.jpg" alt="Stills from Temple at Dusk" width="100%">
+
 ---
 
 ## What the pipeline does
