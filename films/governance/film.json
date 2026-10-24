@@ -1,0 +1,11 @@
+{
+  "id": "governance",
+  "title": {
+    "zh": "写程序，越来越像治理一个组织"
+  },
+  "fps": 30,
+  "music": {
+    "model": "music_v2_5"
+  },
+  "loudness": -14
+}

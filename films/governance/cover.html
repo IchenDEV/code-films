@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>写程序，越来越像治理一个组织 · 封面</title>
+<style>
+  @font-face { font-family: "SC Sans"; src: url("fonts/sans-zh.ttf"); font-weight: 100 900; }
+  @font-face { font-family: "SC Serif"; src: url("fonts/serif-zh.ttf"); font-weight: 200 900; }
+  @font-face { font-family: "SC Grotesk"; src: url("fonts/grotesk.ttf"); font-weight: 300 700; }
+  @font-face { font-family: "SC Mono"; src: url("fonts/mono.ttf"); font-weight: 100 800; }
+  html, body { margin: 0; background: #000; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script src="timeline/douyin.js"></script>
+<script>
+  // ?size=1080x1920；画面文字（TL.txt）借用竖屏时间轴里的那一份
+  window.TL = { lang: 'zh', fmt: 'c', cut: 'short', shots: [], caps: [], txt: window.TL.txt };
+</script>
+<script src="web/engine.js"></script>
+<script src="web/shots/a.js"></script>
+<script src="web/cover.js"></script>
+</body>
+</html>
