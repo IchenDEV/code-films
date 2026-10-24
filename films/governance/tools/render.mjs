@@ -1,0 +1,98 @@
+// 渲染一个成片版本：N 个 Chromium 页面并行渲染帧段，各自直接编码；拼接、混入音轨，再出一版平台交付文件。
+// 用法：node tools/render.mjs <variant> [workers=4] [from秒 to秒]
+//   → out/master/<名字>.mp4（中间母版，画质高、体积大）→ out/deliver/<名字>.mp4（H.264 High，faststart，可直接上传）
+import { chromium } from 'playwright';
+import { spawn, spawnSync } from 'node:child_process';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs';
+import { serve, REPO } from '../../../engine/pipeline/serve.mjs';
+import { basename } from 'node:path';
+const FILM = basename(process.cwd()); // 片子目录名（tools 都在片子目录里运行）
+import { VARIANTS } from '../script.mjs';
+
+const variant = process.argv[2];
+const N = +(process.argv[3] || 4);
+const TL = JSON.parse(readFileSync(`timeline/${variant}.json`, 'utf8'));
+const [w, h] = { h: [1920, 1080], v: [1080, 1920] }[TL.fmt];
+const RANGE = process.argv[4] !== undefined ? [+process.argv[4], +process.argv[5]] : [0, TL.duration];
+const F0 = Math.round(RANGE[0] * TL.fps), F1 = Math.ceil(RANGE[1] * TL.fps);
+const name = VARIANTS[variant].name;
+const tmp = `out/render/${variant}`;
+mkdirSync(tmp, { recursive: true }); mkdirSync('out/master', { recursive: true }); mkdirSync('out/deliver', { recursive: true });
+// 只差片尾的版本（VARIANTS[v].base，比如视频号与抖音只差片尾一句 CTA）：片尾之前的画面直接取 base 的成片，只重渲片尾
+const BASE = VARIANTS[variant].base;
+let HEAD = 0;
+if (BASE && F0 === 0) {
+  const B = JSON.parse(readFileSync(`timeline/${BASE}.json`, 'utf8'));
+  if (JSON.stringify(B.shots) !== JSON.stringify(TL.shots) || JSON.stringify(B.caps) !== JSON.stringify(TL.caps)) { console.error(`[${variant}] 时间轴与 ${BASE} 不同，不能沿用它的画面`); process.exit(1); }
+  if (!existsSync(`out/deliver/${VARIANTS[BASE].name}.mp4`)) { console.error(`[${variant}] 先渲 ${BASE}`); process.exit(1); }
+  HEAD = Math.floor(TL.shots.find((s) => s.kind === 'endcard').a * TL.fps); // 片尾之前（含转场前半段）两版逐帧相同
+}
+const FR = Math.max(F0, HEAD); // 实际要画的第一帧
+const per = Math.ceil((F1 - FR) / N);
+
+// 音轨必须和时间轴一样长（时间轴改了却没重混，就会音画错位）
+if (existsSync(`out/mix/${variant}.wav`)) {
+  const d = +spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `out/mix/${variant}.wav`]).stdout.toString();
+  if (Math.abs(d - TL.duration) > 0.15) { console.error(`[${variant}] 音轨 ${d.toFixed(2)}s 与时间轴 ${TL.duration}s 不一致：先重混（python3 tools/mix.py）`); process.exit(1); }
+}
+const { srv, url } = await serve(REPO);
+const browser = await chromium.launch();
+const t0 = Date.now();
+let done = 0;
+async function worker(k) {
+  const a = FR + k * per, b = Math.min(F1, a + per);
+  if (a >= b) return null;
+  const page = await browser.newPage({ viewport: { width: w, height: h } });
+  page.on('pageerror', (e) => console.error('PAGEERROR', k, e.message));
+  await page.goto(`${url}/films/${FILM}/index.html?v=${variant}`, { timeout: 180000 }); // 机器负载高时 30 s 默认值曾超时
+  await page.evaluate(() => window.ready);
+  const out = `${tmp}/seg_${String(k).padStart(2, '0')}.mp4`;
+  // 中间段：快编码、高画质（慢编码会抢渲染的 CPU）
+  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-c:v', 'mjpeg', '-framerate', String(TL.fps), '-i', '-',
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '15', '-pix_fmt', 'yuv420p', out], { stdio: ['pipe', 'inherit', 'inherit'] });
+  for (let f = a; f < b; f++) {
+    const data = await page.evaluate((t) => window.renderAt(t, 0.94), f / TL.fps);
+    const buf = Buffer.from(data.slice(data.indexOf(',') + 1), 'base64');
+    if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
+    if (++done % 300 === 0) {
+      const el = (Date.now() - t0) / 1000;
+      console.log(`[${variant}] ${done}/${F1 - FR} · ${(done / el).toFixed(1)} fps · eta ${((el / done) * (F1 - FR - done)).toFixed(0)}s`);
+    }
+  }
+  ff.stdin.end();
+  await new Promise((r) => ff.on('close', r));
+  await page.close();
+  return out;
+}
+const segs = (await Promise.all([...Array(N).keys()].map(worker))).filter(Boolean);
+await browser.close(); srv.close();
+if (HEAD) {
+  // 片头部分：从 base 成片截出前 HEAD 帧，按中间段同样的参数编码，再和新画的片尾拼起来
+  const head = `${tmp}/seg_head.mp4`;
+  spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', `out/deliver/${VARIANTS[BASE].name}.mp4`, '-an', '-frames:v', String(HEAD),
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '15', '-pix_fmt', 'yuv420p', '-r', String(TL.fps), head], { stdio: 'inherit' });
+  segs.unshift(head);
+}
+writeFileSync(`${tmp}/segs.txt`, segs.map((s) => `file '${s.split('/').pop()}'`).join('\n'));
+const video = `${tmp}/video.mp4`;
+spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', `${tmp}/segs.txt`, '-c', 'copy', video], { stdio: 'inherit' });
+for (const s of segs) rmSync(s);
+const audio = `out/mix/${variant}.wav`;
+const partial = RANGE[0] > 0 || RANGE[1] < TL.duration;
+const master = partial ? `${tmp}/preview_${RANGE[0]}-${RANGE[1]}.mp4` : `out/master/${name}.mp4`;
+const aIn = existsSync(audio) ? ['-ss', String(RANGE[0]), '-t', String(RANGE[1] - RANGE[0]), '-i', audio] : [];
+spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', video, ...aIn, '-map', '0:v', ...(aIn.length ? ['-map', '1:a', '-c:a', 'aac', '-b:a', '320k'] : []),
+  '-c:v', 'copy', '-shortest', '-movflags', '+faststart', master], { stdio: 'inherit' });
+rmSync(video);
+// 封装后再查一次长度：音轨若在封装时还没写完（比如正在重混），-shortest 会悄悄把整片截短
+const dur = (f) => +spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).stdout.toString();
+if (Math.abs(dur(master) - (RANGE[1] - RANGE[0])) > 0.2) { console.error(`[${variant}] 成片 ${dur(master).toFixed(2)}s，应为 ${(RANGE[1] - RANGE[0]).toFixed(2)}s：音轨不完整，不交付`); process.exit(1); }
+console.log(`[${variant}] rendered in ${((Date.now() - t0) / 1000).toFixed(0)}s → ${master}`);
+if (!partial) {
+  // 交付版：H.264 High / yuv420p / 30fps / AAC 48k，faststart，crf 18。
+  const crf = '18';
+  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', master, '-c:v', 'libx264', '-preset', 'slow', '-crf', crf, '-profile:v', 'high', '-level', '4.2',
+    '-pix_fmt', 'yuv420p', '-r', String(TL.fps), '-g', String(TL.fps * 2), '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-movflags', '+faststart', `out/deliver/${name}.mp4`], { stdio: 'inherit' });
+  if (r.status === 0 && Math.abs(dur(`out/deliver/${name}.mp4`) - TL.duration) <= 0.2) { rmSync(master); console.log(`[${variant}] → out/deliver/${name}.mp4`); }
+  else { console.error(`[${variant}] 交付文件长度不对，保留母版 ${master}`); process.exit(1); }
+}

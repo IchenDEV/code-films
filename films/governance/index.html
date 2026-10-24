@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>写程序，越来越像治理一个组织</title>
+<style>
+  @font-face { font-family: "SC Sans"; src: url("fonts/sans-zh.ttf"); font-weight: 100 900; }
+  @font-face { font-family: "SC Serif"; src: url("fonts/serif-zh.ttf"); font-weight: 200 900; }
+  @font-face { font-family: "SC Grotesk"; src: url("fonts/grotesk.ttf"); font-weight: 300 700; }
+  @font-face { font-family: "SC Mono"; src: url("fonts/mono.ttf"); font-weight: 100 800; }
+  html, body { margin: 0; background: #000; color: #bbb; font: 13px/1.4 system-ui, sans-serif; }
+  canvas { display: block; max-width: 100vw; max-height: 100vh; margin: 0 auto; }
+  #ui { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 12px; align-items: center;
+        padding: 10px 16px; background: linear-gradient(transparent, rgba(0,0,0,.8)); }
+  #ui input { flex: 1; }
+  #ui button { background: #222; color: #ddd; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui" hidden>
+  <button id="play">播放 / 暂停</button>
+  <input id="t" type="range" min="0" step="0.01" value="0">
+  <span id="lab">0.00s</span>
+  <audio id="aud" preload="auto"></audio>
+</div>
+<script>
+  // ?v=<成片版本>：douyin / channels / bilibili
+  // ?v=dev&shot=<镜头>&fmt=v|h&dur=秒&n=句数&k=名字:秒,名字:秒：开发用，不要时间轴，单独画一个镜头（句子在 dur 里平均分布）
+  const P0 = new URLSearchParams(location.search), VARIANT = P0.get('v') || 'douyin';
+  if (VARIANT === 'dev') {
+    const dur = +(P0.get('dur') || 8), n = +(P0.get('n') || 2), k = {};
+    for (const kv of (P0.get('k') || '').split(',').filter(Boolean)) { const [a, b] = kv.split(':'); k[a] = +b; }
+    const lines = [...Array(n).keys()].map((i) => 'L' + i), cues = {};
+    lines.forEach((l, i) => { cues[l] = (i * dur) / n; cues[l + '_end'] = ((i + 1) * dur) / n; });
+    window.TL = { variant: 'dev', cut: P0.get('cut') || 'short', fmt: P0.get('fmt') || 'v', lang: 'zh', fps: 30, duration: dur + 5, poll: true,
+      shots: [{ kind: P0.get('shot'), a: 0, b: dur, lines, cues, k }, { kind: 'endcard', a: dur, b: dur + 5, lines: [], cues: {}, k: {} }],
+      caps: [], acts: [{ name: 'hook', a: 0, b: dur }, { name: 'end', a: dur, b: dur + 5 }], cta: ['你现在和 AI 是什么关系？', '评论区打数字'],
+      txt: { header: ['开发预览：标题第一行', '标题第二行'], source: '出处一行', chapters: {}, poll: [['1', '甲'], ['2', '乙'], ['3', '丙'], ['4', '丁']], sign: 'IDEVLAB' } };
+  } else document.write(`<script src="timeline/${VARIANT}.js"><\/script>`);
+</script>
+<script src="web/engine.js"></script>
+<script src="web/shots/a.js"></script>
+<script src="web/shots/b.js"></script>
+<script src="web/shots/c.js"></script>
+<script src="web/shots/d.js"></script>
+<script src="web/main.js"></script>
+</body>
+</html>
