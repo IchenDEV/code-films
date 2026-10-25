@@ -8,7 +8,7 @@
 export const LINES = [
   { id: 'h1', act: 'hook', seg: 'hook', zh: '科学把我们从神坛上，请下来过三次。', k: { three: '三次' } },
   { id: 'h2', act: 'hook', seg: 'hook', zh: '第三次，正在发生。', k: { now: '正在发生' } },
-  { id: 'a1', act: 'altar', seg: 'vitruvian', zh: '很久以前，我们以为自己是世界的中心。', k: { center: '中心' } },
+  { id: 'a1', act: 'altar', seg: 'tianyuan', zh: '很久以前，我们以为自己是世界的中心。', k: { center: '中心' } },
   { id: 'a2', act: 'altar', seg: 'fuxi', zh: '女娲用黄土造人；', k: { clay: '黄土' } },
   { id: 'a3', act: 'altar', seg: 'adam', zh: '神照着自己的模样造人。', k: { image: '自己的模样' } },
   { id: 'b1', act: 'one', seg: 'ptolemy', zh: '第一次，是位置。托勒密说，地球是宇宙的中心。', k: { ch: '第一次', name: '位置' } },
@@ -45,9 +45,10 @@ export const SAY = { zh: [['长成', '涨成'], ['配乐', '配越'], ['〇', '�
 // stamp：关键词被念出时砸出的大字 [关键词, 大字, 小字, 样式]；样式省略时是章节卡（画面压暗、正中），'num' 是数字（画面上部、不压暗）
 export const SEGS = {
   hook: { src: 'descend', from: 1.6, to: 6.4, w: 860, cy: 640, stamp: [['three', '3 次', '科学把我们请下神坛']] },
-  vitruvian: { src: 'vitruvian', from: 1.0, to: 6.5, w: 1100 },
+  // 神坛一段不用裸体人像（《维特鲁威人》、《创造亚当》里的亚当），平台审核可能误判：换成天圆地方，亚当只取两只手
+  tianyuan: { src: 'tianyuan', from: 5.0, to: 9.6, w: 1000 },
   fuxi: { src: 'fuxi', from: 1.2, to: 5.6, w: 1000 },
-  adam: { src: 'adam', from: 1.0, to: 5.6, w: 1500, cx: 860 },
+  adam: { src: 'adam', from: 3.0, to: 5.6, w: 1100, cx: 930 },
   ptolemy: { src: 'ptolemy', from: 1.0, to: 10.6, w: 1150, stamp: [['ch', '第一次', '位置'], ['years', '1400 年', '地心说', 'num']] },
   copernicus: { src: 'copernicus', from: 1.4, to: 7.6, w: 1150 },
   zoom: { src: 'zoom', from: 2.0, to: 10.0, w: 900, stamp: [['stars', '几千亿', '银河系里的恒星', 'num']] },
