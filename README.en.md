@@ -15,13 +15,15 @@
 
 ## Films
 
-### Ordinary · 凡人　<sub>~6 min · English / 中文 · 1080p</sub>
+### Ordinary · 凡人　<sub>~6 min · English / 中文 · vertical Douyin cut 1:49 · 1080p</sub>
 
 > Perhaps science has only ever done one thing: it has brought us down from the altar.
 
 Three dethronements — of our **place** (geocentrism → the pale blue dot), our **origin** (the Great Chain of Being → the tree of life), and our **mind** (*cogito* → AI).
 
 ▶ **Watch**: [English](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-en.mp4) · [中文](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-zh.mp4)　|　[About the film](films/ordinary/)
+
+Douyin cut (9:16 · 1:49, Chinese): a vertical re-edit of the original shots with a rewritten spoken narration (Pangge), a hook in the first line and a comment poll at the end. ▶ [Watch](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-douyin-zh.mp4)　|　[How it was made](films/ordinary/douyin/)
 
 <img src="docs/images/stills.jpg" alt="Stills from Ordinary" width="100%">
 

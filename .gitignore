@@ -1,5 +1,5 @@
 # 产物与缓存
-films/*/out/
+films/**/out/
 node_modules/
 __pycache__/
 *.pyc

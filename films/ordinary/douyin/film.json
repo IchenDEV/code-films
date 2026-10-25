@@ -1,0 +1,11 @@
+{
+  "id": "ordinary-douyin",
+  "title": { "zh": "凡人 · 抖音版" },
+  "fps": 30,
+  "narration": {
+    "zh": { "voice": "hFamrilbAE6WDMtWgKvu", "voiceName": "Pangge", "model": "eleven_v4", "languageCode": "zh",
+            "settings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.3, "speed": 1.0 } }
+  },
+  "music": { "model": "music_v2_5" },
+  "loudness": -14
+}
