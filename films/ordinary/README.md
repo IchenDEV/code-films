@@ -45,4 +45,8 @@ Archival images: `python3 ../../engine/pipeline/fetch_archive.py` downloads the 
 | `docs/` | Outline, copyedit history, notes on the v3 structural changes |
 | `legacy-v1/` | Code for the first version, 《规律之内》 (archived) |
 
+## Douyin cut
+
+`douyin/` is a vertical (9:16, 1:49, Chinese) cut for Douyin. It reuses this film's shot functions unchanged: each segment plays a time window of an original shot, re-framed into the vertical picture box, under a rewritten narration (Pangge, Eleven v4), a new ElevenLabs score, word-highlighted captions and a comment poll at the end. See [douyin/README.md](douyin/README.md).
+
 Sources and licenses: [CREDITS.md](CREDITS.md).

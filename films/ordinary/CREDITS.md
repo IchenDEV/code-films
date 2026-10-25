@@ -25,6 +25,10 @@ Exact URLs: `pipeline/archive_sources.tsv`.
 
 The narration was synthesized with [ElevenLabs](https://elevenlabs.io) using library voices *Haoran* (Chinese) and *Michael Dan* (English). The audio files are not included in this repository; regenerate them with `./run.sh tts` (subject to ElevenLabs' terms).
 
+### Douyin cut
+
+The Douyin cut (`douyin/`) uses the library voice *Pangge* (Eleven v4) for a rewritten Chinese narration; its first draft was reworked for spoken rhythm by Gemini and then edited back against this film's script (see `douyin/brief/`). Its score and sound effects were generated with ElevenLabs Music and Sound Effects. It adds no facts beyond this film's script.
+
 ## Fonts
 
 Noto Serif CJK / Noto Sans CJK (SIL Open Font License), Nimbus Roman / Nimbus Mono PS (URW base35), DejaVu Sans Mono. They are loaded from the system and are not bundled.

@@ -15,13 +15,15 @@
 
 ## 影片
 
-### 凡人 · Ordinary　<sub>约 6 分钟 · 中文 / English · 1080p</sub>
+### 凡人 · Ordinary　<sub>约 6 分钟 · 中文 / English · 竖屏抖音版 1:49 · 1080p</sub>
 
 > 科学所做的，或许只有一件事：把我们，从神坛上请下来。
 
 三重退位：**位置**（地心说 → 暗淡蓝点）、**起源**（存在巨链 → 生命之树）、**心智**（我思故我在 → AI）。
 
 ▶ **观看**：[中文版](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-zh.mp4) · [English](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-en.mp4)　|　[关于这部片子](films/ordinary/)
+
+抖音版（9:16 · 1:49）：原片镜头的竖屏重剪，旁白重写为口播（Pangge），开场钩子“第三次，正在发生”，片尾评论区投票。▶ [观看抖音版](https://github.com/IchenDEV/code-films/releases/download/ordinary-v1.0/ordinary-douyin-zh.mp4)　|　[制作入口与发布文案](films/ordinary/douyin/)
 
 <img src="docs/images/stills.jpg" alt="《凡人》剧照：冷开场、篝火、天圆地方、创造亚当、托勒密体系、暗淡蓝点、存在巨链、阶梯变成树、同源骨骼、AlphaGo 与加速时间轴、能力分布曲线、本片的自我揭示" width="100%">
 
